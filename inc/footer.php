@@ -34,7 +34,7 @@ Bootstrap 4 -->
   <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<!-- Matomo -->
+<!-- Matomo
 <script type="text/javascript">
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
