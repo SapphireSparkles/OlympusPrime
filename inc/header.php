@@ -61,7 +61,7 @@
       <!-- Messages Dropdown Menu -->
       
         
-       //<?php //include "addins/Birthdays.php"; ?>
+       <?php //include "addins/Birthdays.php"; ?>
         
         </div>
       </li>
