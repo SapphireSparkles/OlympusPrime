@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+
+
+
+
+
+
+
+
+
+
+
+
+<title>UPS Enterprise Portal Log In</title>
+<!--meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="pragma" content="no-cache"/>
+<meta http-equiv="cache-control" content="no-store,no-cache"/>
+<link rel='stylesheet' media="all" href='/UPSRegistration/upspublic/img/old/bootstrap.min.css'/>
+<link rel='stylesheet' media="all" href='/LoginPage/login.css'/>
+<meta http-equiv="Expires" content="-0"/>
+<meta name="robots" content="noindex" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<script src="/UPSRegistration/upspublic/img/old/jquery-1.12.3.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+	// address cross frame scripting.
+	if (top.frames.length!=0)
+		top.location=self.document.location;
+	function submitLogin() {
+		//document.authForm.auth_mode.value = "BASIC";
+		//document.authForm.ct_orig_uri.value = "null";
+		//document.authForm.PREF_LANGUAGE.value = "en_US";
+		var pass = document.authForm.password.value;
+		var user = document.authForm.user.value;
+		if (pass.length > 50) {
+			document.authForm.password.value = pass.substring(0, 50);
+		}
+		if (user.length > 20) {
+			document.authForm.user.value = user.substring(0, 20);
+		}
+		//check on selectlanguage
+		var lang = document.authForm.selectlanguage.value;
+			if (lang.length > 7) {
+				lang = "en_US";
+			}else if (lang=="-1"){
+				lang = "en_US";
+			}
+			lang.replace(/<|>/g, "");
+			document.Change_Language.curr_lang.value = lang;
+		//check on sasusername
+		var sasusername = document.authForm.sasusername.value;
+		if (sasusername.length > 50 || sasusername.indexOf("-1") >=0 || sasusername.indexOf("script") >=0){
+			sasusername = "";
+		}
+		return document.authForm.submit();			
+	}
+	function changePage(){
+		var lang = document.authForm.selectlanguage.value;
+		//document.authForm.ct_orig_uri.value = "null";
+		if(lang=="false"){
+			document.Change_Language.curr_page.value = "change-no";
+		} else {
+			if (lang.length > 7) {
+				lang = "en_US";
+			}else if (lang=="-1"){
+				lang = "en_US";
+			}
+			lang.replace(/<|>/g, "");
+			document.Change_Language.curr_lang.value = lang;
+		}
+		//check on sasusername
+		var sasusername = document.authForm.sasusername.value;
+		if (sasusername.length > 50 || sasusername.indexOf("-1") >=0 || sasusername.indexOf("script") >=0){
+			sasusername = "";
+		}
+
+		return document.Change_Language.submit();
+
+	}
+
+	function switchToSAS(){
+        var sasusername = document.authForm.sasusername.value;
+		/*var ct_orig = document.authForm.ct_orig_uri.value;
+		if (ct_orig.length > 25 || ct_orig.indexOf("-1") >=0){
+			ct_orig = "";
+		}*/
+       
+        var lang = document.authForm.selectlanguage.value;
+        		if(lang=="false"){
+			document.Change_Language.curr_page.value = "change-no";
+		} else {
+			if (lang.length > 7) {
+				lang = "en_US";
+			}else if (lang=="-1"){
+				lang = "en_US";
+			}
+			lang.replace(/<|>/g, "");
+			document.Change_Language.curr_lang.value = lang;
+		}
+        
+        var inputusername=document.authForm.user.value;
+        if(inputusername!=""){
+                        inputusername=inputusername.replace(/[^A-Za-z0-9]/i,"");
+                        sasusername=inputusername;
+                }
+                document.authForm.sasusername.value="";
+                document.authForm.user.value="";
+                document.authForm.password.value="";
+                //Identify internal vs external
+                
+				if (sasusername.length > 15) {
+					sasusername = "";
+				}
+                if(sasusername==""){
+                                javascript:window.open('https://epsas.ups.com/sas/tim_fp_login.jsp?empID=&currlang=en_US');
+                }
+                else{
+                        sasusername=sasusername.replace(/[^A-Za-z0-9]/i,"");
+                        javascript:window.open('https://epsas.ups.com/sas/tim_fp_login.jsp?empID='+sasusername+'&currlang=en_US');
+                }
+	}
+</script>
+
+<script>
+
+function removeSpaces(string) {
+ return string.split(' ').join('');
+}
+</script>
+	<script>
+		$(document).ready(function() {
+            //START :: CHECK IF TRIDENT BASED (IE) AND ADJUST INPUT METHOD//
+			var inputMethod = "input",
+                formList = "";
+            if(/MSIE \d|Trident.12:/.test(navigator.userAgent)) {
+                console.log(/MSIE \d|Trident.*rv:/.test(navigator.userAgent));
+                //Uses "change" for Microsoft Edge
+                inputMethod = "change";
+                console.warn("MS Edge, using" + inputMethod);
+            }
+            //END :: CHECK IF TRIDENT BASED (IE) AND ADJUST INPUT METHOD//
+		});
+	</script>
+
+</head>
+
+
+
+<body onload="document.getElementById('userName').focus();">
+
+
+
+  
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="/UPSRegistration/upspublic/img/html5shiv.js"></script>
+  <script src="/UPSRegistration/upspublic/img/respond.js"></script>
+<![endif]-->
+
+
+
+<form action="/UPSRegistration/UPSPreLogin" method="post" name="Change_Language">
+	<input type="hidden" name="curr_page" value="change-lang"/>
+	<!-- <input type="hidden" name="auth_mode" value="BASIC"> -->
+	<!-- <input type="hidden" name="ct_orig_uri" value=''> -->
+	<input type="hidden" name="curr_lang" value="en_US"/>
+</form>
+
+  <div class="background">
+    <div class="wrapper">
+      <div class="content">
+	  		
+
+        <div class="login-form" id="login">
+          <div class="row">
+            <form method="post" onsubmit="return false;" id="login" action="/UPSRegistration/UPSPreLogin" name="authForm">
+				<!-- <input type="hidden" value="BASIC" name="auth_mode"> -->
+				<!-- <input type="hidden" value="null" name="ct_orig_uri"> -->
+				<input type="hidden" value="user-login" name="curr_page"/>
+				<!-- <input type="hidden" value="en_US" name="PREF_LANGUAGE"> -->
+				<div class="col-xs-12 col-md-1">
+					<img src="/UPSRegistration/upspublic/img/upsers-logo-2x.png" alt="UPSers" class="logo" />
+                </div>
+              <div class="col-xs-12 col-md-11">
+                <div class="row form-right">
+                  <div class="col-xs-12 col-md-10">
+                    <div class="row">
+                      <div class="col-xs-12 col-md-4 col">
+                        <div class="field">
+                        
+						<span class="icon glyphicon glyphicon-globe"></span>
+						<select onchange="changePage();return false;" size="1" name="selectlanguage" id="selectLanguage">
+							
+							<option value="false" selected="selected">Language</option>
+
+							
+								<option value="en_US" >English</option>
+							
+								<option value="fr_CA" >Français Canadien</option>
+							
+								<option value="fr_FR" >Français</option>
+							
+								<option value="zh" >简体中文</option>
+							
+								<option value="zh_TW" >繁體中文</option>
+							
+								<option value="nl" >Nederlands</option>
+							
+								<option value="it" >Italiano</option>
+							
+								<option value="ja" >日本語</option>
+							
+								<option value="ko" >한국어</option>
+							
+								<option value="pl" >Polski</option>
+							
+								<option value="pt" >Português</option>
+							
+								<option value="ru" >Русский</option>
+							
+								<option value="es" >Español</option>
+							
+								<option value="th" >ภาษาไทย</option>
+							
+								<option value="vi" >Tiếng Việt</option>
+							
+								<option value="tr" >Türkçe</option>
+							
+								<option value="de" >Deutsch</option>
+							
+						</select>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-4 col col-user">
+                        <div class="field">
+							<span class="icon glyphicon glyphicon-user"></span>
+							<input type="text" name="user" id="userName" autocomplete="off" tabindex="1" placeholder="User ID" />
+						</div>
+						<input name="sasusername" type="hidden" value=""/>
+						<a href="#" class="help-links" tabindex="3" onclick="javascript:window.open('/UPSRegistration/upspublic/HelpInstructions.jsp'); return false;"><span>Log in help</span></a>
+                     </div>
+                      <div class="col-xs-12 col-md-4 col">
+						<div class="field">
+							<span class="icon glyphicon glyphicon-lock"></span>
+							<input name="password" id="password" type="password" autocomplete="off" tabindex="2" placeholder="Password" />
+						</div>
+						<a href="#" class="help-links" tabindex="4" onclick="switchToSAS();return false;"><span>Forgot Your Password?</span></a>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-2 col">
+                    <div class="field field-button">
+							<button class="btn btn-primary" onclick="submitLogin();return false;" value="Log In">Log In</button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div id="caption">
+		<div class="caption">
+			Super UPSers in Meridian, Mississippi, put UPS values into action. 
+		</div>
+	</div>
+	<div class="copyright">
+		Copyright &copy; 2019, United Parcel Service of America, Inc. All Rights Reserved.
+	</div>
+  </div>
+
+<!--<script src="/UPSRegistration/upspublic/img/old/jquery-1.12.3.js"></script>-->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="/UPSRegistration/upspublic/img/html5shiv.js"></script>
+  <script src="/UPSRegistration/upspublic/img/respond.js"></script>
+<![endif]-->
+</body>
+</html>
