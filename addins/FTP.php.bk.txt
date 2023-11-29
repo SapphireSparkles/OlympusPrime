@@ -1,0 +1,22 @@
+<?php
+
+
+if (isset($_GET['dir'])) 
+{ 
+$dir = $_GET['dir'];
+} else {
+$dir = '/92/IND/';
+}
+
+    $ftp_server = "us-ops-sp.inside.ups.com";
+    $conn_id = ftp_connect($ftp_server);
+
+    $ftp_user_name = "anonymous";
+    $ftp_user_pass = "";
+    $login_result = ftp_login($conn_id, $ftp_user_name, $ftp_user_pass);
+
+    $contents = ftp_nlist($conn_id, $dir);
+    for ($i = 0 ; $i < count($contents) ; $i++)
+        echo "<li><a href='?dir=" . substr($contents[$i],0) . "'>"  . substr($contents[$i],0) . "</a></li>";
+    ftp_close($conn_id);
+?>

@@ -1,0 +1,560 @@
+<script type="text/javascript" language="javascript">
+
+$('#hub').on('keyup keypress', function(e) {
+  var keyCode = e.keyCode || e.which;
+  if (keyCode === 13) { 
+    e.preventDefault();
+    return false;
+  }
+});
+</script>
+<?php
+require_once ("dbcontroller.php");
+$db_handle = new DBController();
+require_once("coonect.php");
+require_once("coonect2.php");
+if (! empty($_GET["sort"])) {
+	$Date =mysqli_real_escape_string($db,$_GET['date']); 
+	$manager =mysqli_real_escape_string($db,$_GET['manager']); 
+	$building =mysqli_real_escape_string($db,$_GET['sort']); 
+	$local = substr($building, 0, 4);
+	$sort=  substr($building, -1, 1);
+	$newsort = $local . " " . $sort . "%";
+$newdate = substr($Date, -4, 4) . "-" . substr($Date, 0,2) . "-" . substr($Date, 3,2);  
+    $sql = "SELECT * FROM `hps_data` where OGZ_NR = '".$local. "' and SRT_TYP_CD ='".$sort."' and SRT_DT = '". $newdate . "'";
+    $results =  $result = $db->query($sql) or die(mysqli_error());
+    ?>
+
+<?php
+   while($row = mysqli_fetch_array($result)){
+    $VOL = $row['VOL'];
+    $PPH = $row['PPH'];
+    $Hours = $row['Hours'];
+    $sortspan = $row['sortspan'];
+   $FPH = $row['FPH'];
+    $staffing = $row['staffing'];
+    $PaidDay = $row['PaidDay'];
+    $Process = $row['Process'];
+      $smallshps = round($row['Smalls']);
+    $ireg = round($row['ireg']);
+    }
+
+   $sql2 ="SELECT max(STR_TO_DATE(CurrDate,'%m/%d/%Y')) FROM `oe_scv_addaline` where Element='Smalls' and TimePeriod = 'Daily'";
+    $results2 = $db2->query($sql2) or die(mysqli_error());
+    ?>
+
+<?php
+   while($row2 = mysqli_fetch_array($results2)){
+    $maxdate = $row2[0];
+    
+    }
+    
+   
+    $newdate2 = substr($maxdate, 5, 2) . "/" . substr($maxdate, -2,2) . "/" . substr($maxdate, 0,4);  
+   // echo $newdate2;
+       $sql3 ="SELECT * FROM `oe_scv_addaline` where TimePeriod = 'Daily' and CurrDate = '".$newdate2. "' and SLIC like '" . $newsort . "' and Element ='Departure Scans'";
+     
+    $results3 = $db2->query($sql3) or die(mysqli_error());
+    ?>
+
+<?php
+   while($row3 = mysqli_fetch_array($results3)){
+    $Daeparture = round($row3['Freq']);
+   
+    
+    }
+    
+         $sql3 ="SELECT * FROM `oe_scv_addaline` where TimePeriod = 'Daily' and CurrDate = '".$newdate2. "' and SLIC like '" . $newsort . "' and Element ='Misloads'";
+  
+    $results3 = $db2->query($sql3) or die(mysqli_error());
+    ?>
+
+<?php
+   while($row3 = mysqli_fetch_array($results3)){
+    $Misloads = round($row3['Freq']);
+   
+    
+    }
+    
+             $sql3 ="SELECT * FROM `oe_scv_addaline` where TimePeriod = 'Daily' and CurrDate = '".$newdate2. "' and SLIC like '" . $newsort . "' and Element ='LIBs w/ OPL'";
+  
+    $results3 = $db2->query($sql3) or die(mysqli_error());
+    ?>
+
+<?php
+   while($row3 = mysqli_fetch_array($results3)){
+    $LIBs = round($row3['Freq']);
+   
+    
+    }
+    
+                 $sql3 ="SELECT * FROM `oe_scv_addaline` where TimePeriod = 'Daily' and CurrDate = '".$newdate2. "' and SLIC like '" . $newsort . "' and Element ='Origin Scan'";
+  
+    $results3 = $db2->query($sql3) or die(mysqli_error());
+    ?>
+
+<?php
+   while($row3 = mysqli_fetch_array($results3)){
+    $Origin = $row3['Freq'];
+   
+    
+    }
+    
+  
+                 $sql3 ="SELECT * FROM `oe_scv_addaline` where TimePeriod = 'Daily' and CurrDate = '".$newdate2. "' and SLIC like '" . $newsort . "' and Element ='Smalls'";
+  
+    $results3 = $db2->query($sql3) or die(mysqli_error());
+    ?>
+
+<?php
+   while($row3 = mysqli_fetch_array($results3)){
+    $Smalls = round(($row3['Freq'] * 100),1 ) . '%';
+   
+    
+    }
+                     $sql3 ="SELECT * FROM `oe_scv_addaline` where TimePeriod = 'Daily' and CurrDate = '".$newdate2. "' and SLIC like '" . $newsort . "' and Element ='Responsible Damages'";
+  
+    $results3 = $db2->query($sql3) or die(mysqli_error());
+    ?>
+
+<?php
+   while($row3 = mysqli_fetch_array($results3)){
+    $Responsible = round($row3['Freq']);
+   
+    
+    }
+    
+                       $sql3 ="SELECT * FROM `oe_scv_addaline` where TimePeriod = 'Daily' and CurrDate = '".$newdate2. "' and SLIC like '" . $newsort . "' and Element ='Ontime Network'";
+  
+    $results3 = $db2->query($sql3) or die(mysqli_error());
+    ?>
+
+<?php
+   while($row3 = mysqli_fetch_array($results3)){
+    $Ontime = round(($row3['Freq'] * 100),1 ) . '%';
+   
+    
+    }
+}
+?>
+ 
+<form id="hub" action="Recap/processing.php" method="get">
+<table  class="table table-responsive table-hover" style="vertical-align: top;>
+<tbody>
+<tr  style=" background-color: #3f77a1;" width="100%">
+
+</tr>
+<tr >
+<td colspan="1"><span style="color: #000000;"><strong>Date:</strong></span></td>
+<td colspan="1"><span ><strong><input class="form-control"  id="date" name="date" type="text" value="<?php echo $Date; ?>" /></strong></span></td>
+<td width="10%"></td>
+<td width="10%"></td>
+<td  width="50%"></td>
+</tr>
+<tr>
+<td colspan="1"><span style="color: #000000;"><strong>Sort Name:</strong></span></td>
+<td colspan="1"><span ><strong><input class="form-control"  name="sort" id="sort-list" type="text" value="<?php echo $building; ?>" /></strong></span></td>
+</tr>
+<tr>
+<td colspan="1"><span style="color: #000000;"><strong>Manager Name:</strong></span></td>
+<td colspan="1"><span ><strong><input class="form-control"  name="manager" id="manager-list" type="text" value="<?php echo $_GET['manager'] ?>" /></strong></span></td>
+</tr>
+</tbody><tbody>
+<tr style=" background-color: #3f77a1;" class="clickable" data-toggle="collapse" data-target="#group-of-rows-1" aria-expanded="false" aria-controls="group-of-rows-1">
+<td style="height: 23px;" colspan="5"><span style="color: #ffffff;"><i class="fa fa-plus" aria-hidden="true"></i> <strong>OPERATIONAL NOTES:</strong></span></td>
+</tr>
+  </tbody>
+   <tbody id="group-of-rows-1" class="collapse">
+<tr >
+
+<td   colspan="5" style="height: 0px;"><textarea name="Notes" id="Notes" placeholder="Place some text here"
+                          style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea></td>
+</tr>
+ </tbody>
+ <tbody>
+<tr style=" background-color: #3f77a1;"  class="clickable" data-toggle="collapse" data-target="#group-of-rows-2" aria-expanded="false" aria-controls="group-of-rows-2">
+<td style=" " colspan="5"><strong><span style="color: #ffffff;"><i class="fa fa-plus" aria-hidden="true"></i> PEOPLE:</span></strong></td>
+
+</tr>
+ </tbody>
+    <tbody id="group-of-rows-2" class="collapse">
+<tr style="height: 86px;"id="collapseTwo"  >
+
+<th style=" " colspan="2"><strong><span></span></strong></td>
+<th style=" "><strong><span >Plan:</span></strong></td>
+<th style=" "><span ><strong>Actual:</strong></span></td>
+<th style=" "><strong><span >Explanation:</span></strong></td>
+</tr><tr>
+<td>BSC Impact Element:</td>
+<td ><span style="color: #0000ff;"># of Injuries:</strong></span></td>
+<td ><center><input class="form-control"  name="inplan" value="0" size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="inact" size="10" value="0" type="text" /></center></td>
+<td ><textarea class="form-control" cols="70" name="inex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td>BSC Impact Element:</td>
+<td ><span style="color: #0000ff;">New Hire Turnover:</span></td>
+<td ><center><input class="form-control"  name="NHPL" value="0" size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="NHAC" value="0" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="NHExp" rows="4"> 
+</textarea></td>
+
+</tr>
+</tbody><tbody>
+<tr style="background-color: #3e759e; " class="clickable" data-toggle="collapse" data-target="#group-of-rows-3" aria-expanded="false" aria-controls="group-of-rows-3">
+<td style="height: 21px; " colspan="5"><span style="color: #ffffff;"><strong><i class="fa fa-plus" aria-hidden="true"></i> SERVICE:</strong></span></td>
+
+</tr>
+ </tbody>
+    <tbody id="group-of-rows-3" class="collapse">
+<tr>
+<th style=" " colspan="2"><strong><span></span></strong></td>
+<th style=" "><strong><span >Plan:</span></strong></td>
+<th style=" "><span ><strong>Actual:</strong></span></td>
+<th style=" "><strong><span >Explanation:</span></strong></td>
+</tr><tr>
+<td></td>
+<td ><span style="color: #0000ff;"># LIBs Scanned:</strong></span></td>
+<td ><center><input class="form-control"  name="libpl" value="0" size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="libac" value="0" size="10" type="text" /></center></td>
+<td ><textarea class="form-control" cols="70" name="libex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;"># Missed Origin Scanned:</span></td>
+<td ><center><input class="form-control"  name="mopl"  value="0"size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="moac" value="0" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="moex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;"># E3 LIB:</strong></span></td>
+<td ><center><input class="form-control"  name="e3pl" value="0" size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="e3ac" value="0" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="e3ex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Hold Over Loads:</span></td>
+<td ><center><input class="form-control"  name="hopl" value="0" size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="hoac" value="0" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="hoex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Hold Over Volume:</strong></span></td>
+<td ><center><input class="form-control"  name="hovpl" value="0" size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="hovac" value="0" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="hovex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Inbound Loads Not Processed:</span></td>
+<td ><center><input class="form-control"  name="ilnppl" value="0"  size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="ilnopac" value="0"  size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="ilnpex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Inbound Volume Not Processed:</strong></span></td>
+<td ><center><input class="form-control"  name="ivnppl" value="0"  size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="ivnpac" value="0"  size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="ivnpex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Non-Commit Loads:</span></td>
+<td ><center><input class="form-control"  name="nclpl" value="0"  size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="nclac" value="0"  size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="nclex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Non-Commit Volume:</strong></span></td>
+<td ><center><input class="form-control"  name="ncvpl" value="0"  size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="ncvac" value="0"  size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="ncvex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;"># LIB due to Breakdown:</span></td>
+<td ><center><input class="form-control"  name="brakpl" value="0"  size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="brakac" value="0"  size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="brakex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td>BSC Impact Element:</td>
+<td ><span style="color: #0000ff;">SEAS Total LIB Frequency:</strong></span></td>
+<td ><center><input class="form-control"  name="slfpl" size="10" type="text" value="1,650" /></center></td>
+<td ><center><input class="form-control"  name="slfac" size="10" type="text"  value="<?php echo $LIBs; ?>" /></center></td>
+<td ><textarea class="form-control"cols="70" name="slfex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Misload Frequency:</span></td>
+<td ><center><input class="form-control"  name="missloadpl" size="10" type="text" value="4000" /></center></td>
+<td ><center><input class="form-control"  name="missloadac" size="10" type="text" value="<?php echo $Misloads; ?>"  /></center></td>
+<td ><textarea class="form-control"cols="70" name="missloadex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Departure Scan Frequency:</strong></span></td>
+<td ><center><input class="form-control"  name="dspl" size="10" type="text" value="60" /></center></td>
+<td ><center><input class="form-control"  name="dsac" size="10" type="text"   value="<?php echo $Daeparture; ?>" /></center></td>
+<td ><textarea class="form-control"cols="70" name="dsex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td>BSC Impact Element:</td>
+<td ><span style="color: #0000ff;">% Smalls Bagged:</span></td>
+<td ><center><input class="form-control"  name="sbpl" size="10" type="text" VALUE = "92.5%" /></center></td>
+<td ><center><input class="form-control"  name="sbac" size="10" type="text" value="<?php echo $Smalls; ?>" /></center></td>
+<td ><textarea class="form-control"cols="70" name="sbex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td>BSC Impact Element:</td>
+<td ><span style="color: #0000ff;">Dmg/Ovrgd/Plfg Frequency:</strong></span></td>
+<td ><center><input class="form-control"  name="dmgpl" size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="dmgac" size="10" type="text" value="<?php echo $Responsible; ?>" /></center></td>
+<td ><textarea class="form-control"cols="70" name="dmgex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td>BSC Impact Element:</td>
+<td ><span style="color: #0000ff;">On-Time Departure %:</span></td>
+<td ><center><input class="form-control"  name="otdpl" size="10" type="text" VALUE ="80%" /></center></td>
+<td ><center><input class="form-control"  name="otdac" size="10" type="text" value="<?php echo $Ontime; ?>" /></center></td>
+<td ><textarea class="form-control"cols="70" name="otdex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Total Mispicks:</strong></span></td>
+<td ><center><input class="form-control"  name="tmpl" value="0"  size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="tmac" value="0"  size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="tmex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Mispicks Not Rescanned:</span></td>
+<td ><center><input class="form-control"  name="mnrpl" value="0"  size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="mnrac" value="0"  size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="mnrex" rows="4"> 
+</textarea></td>
+
+</tr>
+</tbody><tbody>
+<tr style="background-color: #3e759e; " class="clickable" data-toggle="collapse" data-target="#group-of-rows-5" aria-expanded="false" aria-controls="group-of-rows-5">
+<td style="height: 21px; " colspan="5"><span style="color: #ffffff;"><strong><i class="fa fa-plus" aria-hidden="true"></i> PERFORMANCE:</strong></span></td>
+
+</tr>
+ </tbody>
+    <tbody id="group-of-rows-5" class="collapse">
+<tr>
+<th style=" " colspan="2"><strong><span></span></strong></td>
+<th style=" "><strong><span >Plan:</span></strong></td>
+<th style=" "><span ><strong>Actual:</strong></span></td>
+<th style=" "><strong><span >Explanation:</span></strong></td>
+</tr><tr>
+<td></td>
+<td ><span style="color: #0000ff;">Sorted Volume:</strong></span></td>
+<td ><center><input class="form-control"  name="svpl" id="svpl" size="10" type="text" value="<?php echo $VOL; ?>" /></center></td>
+<td ><center><input class="form-control"  name="svac" id="svac" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="svex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Irreg Volume:</span></td>
+<td ><center><input class="form-control"  name="ivpl" id="ivpl" size="10" type="text"  value="<?php echo $ireg; ?>"  /></center></td>
+<td ><center><input class="form-control"  name="ivac" id="ivac" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="ivex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Smalls Volume:</strong></span></td>
+<td ><center><input class="form-control"  name="smvpl" id="smvpl"  size="10" type="text" value="<?php echo $smallshps; ?>" /></center></td>
+<td ><center><input class="form-control"  name="smvac" id="smvac" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="smvex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Total Hours:</strong></span></td>
+<td ><center><input class="form-control"  name="thpl" id="thpl" size="10" type="text" value="<?php echo $Hours; ?>" /></center></td>
+<td ><center><input class="form-control"  name="thac" id="thac" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="thex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td>BSC Impact Element:</td>
+<td ><span style="color: #0000ff;">Hub PPH:</span></td>
+<td ><center><input class="form-control"  name="hppl" id="hppl" size="10" type="text" value="<?php echo $PPH; ?>"/></center></td>
+<td ><center><input class="form-control"  name="hpac" id="hpac" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="hpex" rows="4"> 
+</textarea></td>
+</tr>
+
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Breakdown Hours Impact:</span></td>
+<td ><center><input class="form-control"  name="bhpl" value="0"  size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="bhac" value="0"  size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="bhex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">MSD % Effective:</strong></span></td>
+<td ><center><input class="form-control"  name="msdpl" size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="msdac" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="msdex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td>Military</td>
+<td ><span style="color: #0000ff;">Unload Start Time:</span></td>
+<td ><center><input class="form-control"  name="ustpl" id="ustpl"size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="ustac" id="ustac" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="ustex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Sort Span:</span></td>
+<td ><center><input class="form-control"  name="sspl" id="sspl" size="10" type="text" value="<?php echo $sortspan; ?>" /></center></td>
+<td ><center><input class="form-control"  name="ssac"  ID="ssac" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="ssex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td>Military</td>
+<td ><span style="color: #0000ff;">Unload Down Time:</strong></span></td>
+<td ><center><input class="form-control"  name="udtpl" id="udtpl"  size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="udtac" id="udtac" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="udtex" rows="4"> 
+</textarea></td>
+</tr>
+
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Flow per Hour:</strong></span></td>
+<td ><center><input class="form-control"  name="fphpl" id="fphpl" size="10" type="text" value="<?php echo $FPH; ?>" /></center></td>
+<td ><center><input class="form-control"  name="fphac" id="fphac" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="fphex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Staffing Worked:</span></td>
+<td ><center><input class="form-control"  name="swpl" size="10" type="text" value="<?php echo $staffing; ?>" /></center></td>
+<td ><center><input class="form-control"  name="swac"  id="swac" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="swex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Paid Day:</strong></span></td>
+<td ><center><input class="form-control"  name="pdpl" size="10" type="text"  value="<?php echo $PaidDay; ?>"/></center></td>
+<td ><center><input class="form-control"  name="pdac"  id="pdac" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="pdex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Process Rate:</span></td>
+<td ><center><input class="form-control"  name="prpl" id="prpl" size="10" type="text" value="<?php echo $Process; ?>" /></center></td>
+<td ><center><input class="form-control"  name="prac" id="prac" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="prex" rows="4"> 
+</textarea></td>
+
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Trailers Processed:</strong></span></td>
+<td ><center><input class="form-control"  name="tppl" size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="tpac" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="tpex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Late loads after 8pm / 1:30am:</span></td>
+<td ><center><input class="form-control"  name="llapl" value="0"  size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="llaac" value="0"  size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="llaex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Target Load Cuts:</strong></span></td>
+<td ><center><input class="form-control"  name="tlcpl" value="0"  size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="tlcac" value="0"  size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="tlcex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Belt Stops:</span></td>
+<td ><center><input class="form-control"  name="bspl" value="0"  size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="bsac" value="0"  size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="bsex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td></td>
+<td ><span style="color: #0000ff;">Bags Left for Next Sort:</strong></span></td>
+<td ><center><input class="form-control"  name="blfnspl" value="0"  size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="blfnsac" value="0"  size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="blfnsex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td>BSC Impact Element:</td>
+<td ><span style="color: #0000ff;">EDS % Effective:</span></td>
+<td ><center><input class="form-control"  name="edspl" size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="edsac" size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="edsex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td>BSC Impact Element:</td>
+<td ><span style="color: #0000ff;">Inside Overtime Hours:</strong></span></td>
+<td ><center><input class="form-control"  name="iohpl" value="0"  size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="iohac" value="0"  size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="iohex" rows="4"> 
+</textarea></td>
+</tr>
+<tr >
+<td>BSC Impact Element:</td>
+<td ><span style="color: #0000ff;">PTRS Overtime Hours:</span></td>
+<td ><center><input class="form-control"  name="ptrspl" value="0"  size="10" type="text" /></center></td>
+<td ><center><input class="form-control"  name="ptrsac" value="0"  size="10" type="text" /></center></td>
+<td ><textarea class="form-control"cols="70" name="ptrsex" rows="4"> 
+</textarea></td>
+
+</tr>
+  </tbody>
+</table>
+ <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+    
+</form>

@@ -1,0 +1,3 @@
+https://igate.inside.ups.com/IGateway/apps/index.cfm?action=IntlOps.Home.Main&strFuncName15543=BeltSummary&strFuncAction15543=BeltSummaryExcel&intReportLocationID=6485183463415375820&dtmReportDate=2018-12-04&dtmSortDate=2018-12-04&blnActivitySorts=1&strSort=05
+
+=IF(A4="","",IF(AND(CODE(LEFT(A4,1))>=48,CODE(LEFT(A4,1))<=57),"UPST" & trim(A4),IF(OR(AND(CODE(LEFT(A4,1))>=65,CODE(LEFT(A4,1))<=90),AND(CODE(LEFT(A4,1))>=97,CODE(LEFT(A4,1))<=122)),trim(A4),"Other"))) 
