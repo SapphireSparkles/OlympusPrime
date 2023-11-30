@@ -58,15 +58,10 @@
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
-      <!-- Messages Dropdown Menu -->
-      
-        
-       <?php //include "addins/Birthdays.php"; ?>
-        
+      <!-- Messages Dropdown Menu -->       
         </div>
       </li>
       <!-- Notifications Dropdown Menu -->
-     <?php //include "addins/Anniversaries.php"; ?>
         </div>
       </li>
      
