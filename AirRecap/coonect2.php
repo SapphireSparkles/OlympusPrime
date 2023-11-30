@@ -10,7 +10,7 @@ if(isset($_GET["Updateme"])){
 $Updateme = 0;
 }
 
-$servername2 = "localhost";
+$servername2 = "ttyche2.mysql.database.azure.com";
 $username2 = "ttyche2";
 $password2 = "ThI$V3rY$tR0nG";
 $database2 = "dbtycche";

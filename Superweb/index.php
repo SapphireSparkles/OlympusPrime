@@ -15,7 +15,7 @@
         <input type="text" class="form-control" placeholder="Employee ID" name="eid" id="eid">
 
         <div class="input-group-append">
-         <input type="hidden" name="page" value="superweb" />
+         <input type="hidden" name="page" value="dbtyche" />
           <button type="submit"  class="btn"><i class="fa fa-arrow-right text-muted"></i></button>
         </div>
       </div>

@@ -6,7 +6,7 @@
 <form name='form' method='get' action="#">
 
 Employee ID: <input type="text" name="eid" id="eid" ><br/>
- <input type="hidden" name="page" value="superweb" /> 
+ <input type="hidden" name="page" value="dbtyche" /> 
 <input type="submit" name="submit" value="Submit">  
 
 </form></center>

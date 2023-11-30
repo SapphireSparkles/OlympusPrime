@@ -1,5 +1,5 @@
 <?php
-$servername = "localhost";
+$servername = "ttyche2.mysql.database.azure.com";
 $username = "ttyche2";
 $password = "ThI$V3rY$tR0nG";
 $dbname = "dbtycche";
