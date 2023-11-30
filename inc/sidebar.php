@@ -69,7 +69,7 @@
               </p>
             </a>
           </li>
-          <!--    <li class="nav-item">
+          <li class="nav-item">
             <a href="?page=about" class="nav-link">
        
                <i class="nav-icon fa fa-address-book"></i>
@@ -104,7 +104,7 @@
             </ul>
           </li>
          
-     --></ul>
+        </ul>
       </nav>
       <!-- /.sidebar-menu -->
     </div>
