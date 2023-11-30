@@ -15,7 +15,7 @@ $opt = mysqli_real_escape_string($db, $_POST['opt']);
 $AddUser = "INSERT INTO emp_info (email, emp_id, name_first, name_last,cell,carrier,opt ) VALUES ('$email', '$EID', '$name', '$lname', '$phone', '$CARRIER', '$opt')"; 
 
 if($db->query($AddUser ) === TRUE){ 
-echo '<META HTTP-EQUIV=REFRESH CONTENT="0; http://uwkp0008fa2e:8080/index.php/superweb?eid='.$EID.'">';
+echo '<META HTTP-EQUIV=REFRESH CONTENT="0; index.php/superweb?eid='.$EID.'">';
 } 
 else 
 { 

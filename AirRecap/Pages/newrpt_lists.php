@@ -1,7 +1,7 @@
-<script src="http://uwkp0008fa2e:8080/superweb/js/js-url-2.5.3/url.min.js"></script>
-<link rel="stylesheet" type="text/css" href="http://uwkp0008fa2e:8080/superweb/DataTables/datatables.min.css"/>
+<script src="superweb/js/js-url-2.5.3/url.min.js"></script>
+<link rel="stylesheet" type="text/css" href="superweb/DataTables/datatables.min.css"/>
  
-<script type="text/javascript" src="http://uwkp0008fa2e:8080/superweb/DataTables/datatables.min.js"></script>
+<script type="text/javascript" src="superweb/DataTables/datatables.min.js"></script>
 
 <script>
 (function ($) {
@@ -12,7 +12,7 @@ $.ajaxSetup ({
     // Disable caching of AJAX responses */
     cache: false
 });
-var loader='<center><img src="http://uwkp0008fa2e:8080/superweb/inc/loading.gif"></center>';
+var loader='<center><img src="superweb/inc/loading.gif"></center>';
 
 
 //$(document).ready(function(){

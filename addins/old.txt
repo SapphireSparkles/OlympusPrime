@@ -1,7 +1,7 @@
-<script src="http://uwkp0008fa2e:8080/superweb/js/js-url-2.5.3/url.min.js"></script>
-<script src="http://uwkp0008fa2e:8080/superweb/js/pag.js"></script>
+<script src="superweb/js/js-url-2.5.3/url.min.js"></script>
+<script src="superweb/js/pag.js"></script>
 
-<link type="text/css" rel="stylesheet" href="http://uwkp0008fa2e:8080/superweb/inc/simplePagination.css"/>
+<link type="text/css" rel="stylesheet" href="superweb/inc/simplePagination.css"/>
 
 <script>
 (function ($) {
@@ -12,7 +12,7 @@ $.ajaxSetup ({
     // Disable caching of AJAX responses */
     cache: false
 });
-var loader='<center><img src="http://uwkp0008fa2e:8080/superweb/inc/loading.gif"></center>';
+var loader='<center><img src="superweb/inc/loading.gif"></center>';
 
 
 //$(document).ready(function(){

@@ -109,10 +109,10 @@
 } 
 
 
-$servername = "uwkp0008fa2e";
-$username = "sa0392";
-$password = "so_cal";
-$database = "socaloe";
+$servername = "ttyche2.mysql.database.azure.com";
+$username = "ttyche2";
+$password = "ThI$V3rY$tR0nG";
+$database = "dbtycche";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password);
 

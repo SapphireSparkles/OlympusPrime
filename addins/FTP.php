@@ -32,8 +32,8 @@
 <?php
 
 $servername = "localhost";
-$username = "sa0392";
-$password = "so_cal";
+$username = "ttyche2";
+$password = "ThI$V3rY$tR0nG";
 $database = "superweb";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password);
@@ -80,7 +80,7 @@ echo "</li></ul>";
 	</ul>	
 	</div>
 
-<script src="http://uwkp0008fa2e:8080/superweb/js/js-url-2.5.3/url.min.js"></script>
+<script src="superweb/js/js-url-2.5.3/url.min.js"></script>
 	
 	<script src="../addins/dist/jstree.min.js"></script>
 	

@@ -1,7 +1,7 @@
 <?php 
 include "simple_html_dom.php";
 
-$input =  "http://uwkp0008fa2e:8080/addins/dataGrabber/Mor.html";
+$input =  "addins/dataGrabber/Mor.html";
 
 // Create a DOM object
 $html = new simple_html_dom();

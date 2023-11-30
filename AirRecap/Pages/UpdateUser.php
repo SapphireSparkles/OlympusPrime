@@ -38,7 +38,7 @@ $AddUser = "UPDATE emp_info SET email='".$email."', emp_id='".$EID."',name_first
 
 if($db->query($AddUser ) === TRUE){ 
 	
-echo '<META HTTP-EQUIV=REFRESH CONTENT="0; http://uwkp0008fa2e:8080/index.php/superweb?eid='.$EID.'">';
+echo '<META HTTP-EQUIV=REFRESH CONTENT="0; index.php/superweb?eid='.$EID.'">';
 } 
 else 
 { 

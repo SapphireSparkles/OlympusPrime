@@ -1,8 +1,8 @@
 <?php
 class DBController {
-	private $host = "uwkp0008fa2e";
-	private $user = "sa0392";
-	private $password = "so_cal";
+	private $host = "ttyche2.mysql.database.azure.com";
+	private $user = "ttyche2";
+	private $password = "ThI$V3rY$tR0nG";
 	private $database = "recap";
 	private $conn;
 	

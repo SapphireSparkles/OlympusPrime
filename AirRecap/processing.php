@@ -147,7 +147,7 @@ $Date =$_GET['date'];
 $newdate = substr($Date, -4, 4) . "-" . substr($Date, 0,2) . "-" . substr($Date, 3,2);  
 $sort =$_GET['sort'];
 $manager =$_GET['manager'];
-$sourceurl = "http://uwkp0008fa2e:8080/Recap/action_page.php?" .$url;
+$sourceurl = "Recap/action_page.php?" .$url;
 
 require_once 'dompdf/lib/html5lib/Parser.php';
 

@@ -2,9 +2,9 @@
 <?php
 
 $servername = "localhost";
-$username = "sa0392";
-$password = "so_cal";
-$database = "socaloe";
+$username = "ttyche2";
+$password = "ThI$V3rY$tR0nG";
+$database = "dbtycche";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password);
 

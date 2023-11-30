@@ -126,7 +126,7 @@ $('.list3').load('Superweb/Pages/list3.php?eid='+ $.urlParam('eid'));
 }
 
 
-var loader='<center><img src="http://uwkp0008fa2e:8080/superweb/inc/loading.gif"></center>';
+var loader='<center><img src="superweb/inc/loading.gif"></center>';
     $(".js-table").on("click", "td[data-url]", function () {
 
     if ($(this).data("url")=="NO"){

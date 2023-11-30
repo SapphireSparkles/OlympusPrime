@@ -22,6 +22,6 @@ $results = $crawler->settings($settings);
 $output = $crawler->output('xml');
 echo "<pre>" . print_r($output, true) . "</pre>";
 
-header("Location: http://uwkp0008fa2e:8080/addins/fire.php");
+header("Location: addins/fire.php");
 die();
 ?>

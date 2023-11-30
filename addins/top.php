@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "sa0392";
-$password = "so_cal";
-$dbname = "socaloe";
+$username = "ttyche2";
+$password = "ThI$V3rY$tR0nG";
+$dbname = "dbtycche";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

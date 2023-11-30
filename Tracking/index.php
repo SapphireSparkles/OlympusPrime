@@ -2,8 +2,8 @@
 
 //Connect to the database
 
-$link = mysqli_connect("uwkp0008fa2e", "sa0392", "so_cal") or die(mysqli_error());
-mysqli_select_db($link, "socaloe") or die(mysqli_error($link));
+$link = mysqli_connect("ttyche2.mysql.database.azure.com", "ttyche2", "ThI$V3rY$tR0nG") or die(mysqli_error());
+mysqli_select_db($link, "dbtycche") or die(mysqli_error($link));
 
 if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
     $ip = $_SERVER['HTTP_CLIENT_IP'];

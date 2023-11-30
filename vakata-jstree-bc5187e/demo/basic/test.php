@@ -17,11 +17,11 @@
 		<ul>
 
 <?php
-    $xml = simplexml_load_file('http://uwkp0008fa2e:8080/addins/inside_ftpcrawl.xml');
+    $xml = simplexml_load_file('addins/inside_ftpcrawl.xml');
 
     //$jobs = array_map("strval", $xml->xpath("//list_item/dir"));
 
-    $url = "http://uwkp0008fa2e:8080/addins/inside_ftpcrawl.xml";
+    $url = "addins/inside_ftpcrawl.xml";
 
 $xmlfiledata = file_get_contents("$url");
 

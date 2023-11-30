@@ -11,9 +11,9 @@ $Updateme = 0;
 }
 
 $servername2 = "localhost";
-$username2 = "sa0392";
-$password2 = "so_cal";
-$database2 = "socaloe";
+$username2 = "ttyche2";
+$password2 = "ThI$V3rY$tR0nG";
+$database2 = "dbtycche";
 // Create connection
 $conn2 = mysqli_connect($servername2, $username2, $password2);
 

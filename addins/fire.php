@@ -1,12 +1,12 @@
 <?php 
-//xml = simplexml_load_file('http://uwkp0008fa2e:8080/addins/inside_ftpcrawl.xml');
+//xml = simplexml_load_file('addins/inside_ftpcrawl.xml');
 
 $xmlDoc = new DOMDocument();
-$xmlDoc->load("http://uwkp0008fa2e:8080/addins/inside_ftpcrawl.xml");
+$xmlDoc->load("addins/inside_ftpcrawl.xml");
 
-$servername = "UWKP0008FA2E";
-$username = "sa0392";
-$password = "so_cal";
+$servername = "ttyche2.mysql.database.azure.com";
+$username = "ttyche2";
+$password = "ThI$V3rY$tR0nG";
 $database = "superweb";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password);
