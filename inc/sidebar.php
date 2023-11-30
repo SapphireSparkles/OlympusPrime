@@ -2,7 +2,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index.php" class="brand-link  bg-info">
-      <img src="dist/img/logo.png"
+      <img src="dist/img/T_Logo_big.png"
            alt="UPS"
            class="brand-image "
            style="opacity: .8">
