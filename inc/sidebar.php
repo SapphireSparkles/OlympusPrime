@@ -36,11 +36,10 @@
                Home
               </p>
             </a>
-           
           </li>
           
           <li class="nav-item">
-            <a href="Page/reports" class="nav-link">
+            <a href="Page/reports.php" class="nav-link">
              <i class="nav-icon fa fa-chart-line"></i>
               <p>
                Reports
@@ -49,7 +48,7 @@
           </li>
           
           <li class="nav-item">
-            <a href="Page/superweb" class="nav-link">
+            <a href="Page/superweb.php" class="nav-link">
               <i class="nav-icon fa fa-tasks"></i>
               <p>
              Subscription Manager
@@ -58,7 +57,7 @@
           </li>
           
           <li class="nav-item">
-            <a href="Page/Ticket" class="nav-link">
+            <a href="Page/Ticket.php" class="nav-link">
               <i class="nav-icon fa fa-check-circle"></i>
               <p>
                  Report Requests
@@ -67,7 +66,7 @@
           </li>
           
           <li class="nav-item">
-            <a href="Page/about" class="nav-link">
+            <a href="Page/about.php" class="nav-link">
                <i class="nav-icon fa fa-address-book"></i>
               <p>
                 About Us
@@ -85,13 +84,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="Page/recap" class="nav-link">
+                <a href="Page/recap.php" class="nav-link">
                   <i class="fa fa-calendar-alt nav-icon"></i>
                   <p>Daily Recap</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="Page/addaline" class="nav-link">
+                <a href="Page/addaline.php" class="nav-link">
                   <i class="fa fa-balance-scale nav-icon"></i>
                   <p>Service Add-A-Line</p>
                 </a>
