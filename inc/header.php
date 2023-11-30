@@ -53,18 +53,6 @@
         <!--  <a href="#" class="nav-link">Contact</a> -->
       </li>
     </ul>
-
-
-
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
-      <!-- Messages Dropdown Menu -->       
-        </div>
-      </li>
-      <!-- Notifications Dropdown Menu -->
-        </div>
-      </li>
-     
-    </ul>
   </nav>
+</div>
   <!-- /.navbar -->
