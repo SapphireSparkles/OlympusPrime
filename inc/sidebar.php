@@ -3,10 +3,10 @@
     <!-- Brand Logo -->
     <a href="index.php" class="brand-link  bg-info">
       <img src="dist/img/T_Logo_big.png"
-           alt="UPS"
+           alt="Temco"
            class="brand-image "
            style="opacity: .8">
-      <span class="brand-text  font-weight-light">South Cal. IE Portal</span>
+      <span class="brand-text  font-weight-light">Temco Logistics BI Portal</span>
     </a>
 
     <!-- Sidebar -->
@@ -17,9 +17,9 @@
           <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
-        </div>-->
+          <a href="#" class="d-block">Alexander Pierce</a>-->
       </div>
+    <!--</div>-->
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
@@ -29,7 +29,7 @@
           
            
                
-               <li class="nav-item">
+          <li class="nav-item">
             <a href="index.php" class="nav-link">
               <i class="nav-icon fa fa-home"></i>
               <p>
@@ -49,7 +49,7 @@
               </p>
             </a>
           </li>
-           <li class="nav-item">
+          <li class="nav-item">
             <a href="?page=superweb" class="nav-link">
        
               <i class="nav-icon fa fa-tasks"></i>
@@ -59,7 +59,7 @@
               </p>
             </a>
           </li>
-           <li class="nav-item">
+          <li class="nav-item">
             <a href="?page=Ticket" class="nav-link">
        
               <i class="nav-icon fa fa-check-circle"></i>
@@ -69,7 +69,7 @@
               </p>
             </a>
           </li>
-         <!--    <li class="nav-item">
+          <!--    <li class="nav-item">
             <a href="?page=about" class="nav-link">
        
                <i class="nav-icon fa fa-address-book"></i>
@@ -104,7 +104,7 @@
             </ul>
           </li>
          
-        </ul>
+     --></ul>
       </nav>
       <!-- /.sidebar-menu -->
     </div>
