@@ -32,7 +32,7 @@
                   
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img class="d-block w-100" src="images/banners/SanDiegoMDO1.png" width="100%" alt="First slide">
+                      <img class="d-block w-100" src="images/banners/Carson3pl1.png" width="100%" alt="First slide">
                     </div>
                    
                   </div>
