@@ -6,7 +6,7 @@
            alt="Temco"
            class="brand-image "
            style="opacity: .8">
-      <span class="brand-text  font-weight-light">Temco Logistics BI Portal</span>
+      <span class="brand-text  font-weight-light">Temco BI Portal</span>
     </a>
 
     <!-- Sidebar -->
