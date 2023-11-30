@@ -50,8 +50,8 @@
 html {
   font-family: sans-serif;
   line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
 }
@@ -2130,7 +2130,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  user-select: none;
+  user-select: none
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
@@ -3348,7 +3348,7 @@ input[type="button"].btn-block {
   height: 1rem;
   pointer-events: none;
   content: "";
-  user-select: none;
+  user-select: none
   background-color: #dee2e6;
   box-shadow: inset 0 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
 }
@@ -12442,8 +12442,8 @@ label:not(.form-check-label):not(.custom-file-label) {
 
 .select2-results__option {
   padding: 6px 12px;
-  user-select: none;
-  -webkit-user-select: none;
+  user-select: none
+  -webkit-user-select: none
 }
 
 .select2-container .select2-selection--single .select2-selection__rendered {
