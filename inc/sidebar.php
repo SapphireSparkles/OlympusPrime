@@ -40,7 +40,7 @@
            
           </li>
           <li class="nav-item">
-            <a href="?page=reports" class="nav-link">
+            <a href="?Page=reports" class="nav-link">
              <i class="nav-icon fa fa-chart-line"></i>
            
               <p>
@@ -50,7 +50,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="?page=superweb" class="nav-link">
+            <a href="?Page=superweb" class="nav-link">
        
               <i class="nav-icon fa fa-tasks"></i>
               <p>
@@ -60,7 +60,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="?page=Ticket" class="nav-link">
+            <a href="?Page=Ticket" class="nav-link">
        
               <i class="nav-icon fa fa-check-circle"></i>
               <p>
