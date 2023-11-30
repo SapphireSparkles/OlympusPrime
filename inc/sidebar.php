@@ -34,73 +34,68 @@
               <i class="nav-icon fa fa-home"></i>
               <p>
                Home
-               
               </p>
             </a>
            
           </li>
+          
           <li class="nav-item">
-            <a href="?Page=reports" class="nav-link">
+            <a href="Page/reports" class="nav-link">
              <i class="nav-icon fa fa-chart-line"></i>
-           
               <p>
                Reports
-               
               </p>
             </a>
           </li>
+          
           <li class="nav-item">
-            <a href="?Page=superweb" class="nav-link">
-       
+            <a href="Page/superweb" class="nav-link">
               <i class="nav-icon fa fa-tasks"></i>
               <p>
              Subscription Manager
-               
               </p>
             </a>
           </li>
+          
           <li class="nav-item">
-            <a href="?Page=Ticket" class="nav-link">
-       
+            <a href="Page/Ticket" class="nav-link">
               <i class="nav-icon fa fa-check-circle"></i>
               <p>
-             Report Requests
-               
+                 Report Requests
               </p>
             </a>
           </li>
+          
           <li class="nav-item">
-            <a href="?page=about" class="nav-link">
-       
+            <a href="Page/about" class="nav-link">
                <i class="nav-icon fa fa-address-book"></i>
               <p>
-            About Us
-               
+                About Us
               </p>
             </a>
-          </li>  --!>
+          </li>
+          
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fa fa-tools"></i>
               <p>
-               Resources
+                 Resources
                 <i class="right fa fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="?page=recap" class="nav-link">
+                <a href="Page/recap" class="nav-link">
                   <i class="fa fa-calendar-alt nav-icon"></i>
                   <p>Daily Recap</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="?page=addaline" class="nav-link">
+                <a href="Page/addaline" class="nav-link">
                   <i class="fa fa-balance-scale nav-icon"></i>
                   <p>Service Add-A-Line</p>
                 </a>
               </li>
-              
             </ul>
           </li>
          
