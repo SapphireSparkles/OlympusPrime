@@ -52,7 +52,7 @@ Training of new BI Engineers.
 </p>
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:sna1mxk@ups.com"><li><img class="rc_member_icon" src="images/profiles/Mike.jpg'" width="250px" /></li></a>
+                                            <a href="mailto:sna1mxk@ups.com"><li><img class="rc_member_icon" src="images/profiles/Mike.jpg" width="250px" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
