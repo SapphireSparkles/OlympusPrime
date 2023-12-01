@@ -102,13 +102,13 @@
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
                     <a href="?page=exdash" class="nav-link">
-                      <i class="fa fa-balance-scale nav-icon"></i>
+                      <i class="fa fa-user-circle-o nav-icon"></i>
                       <p>Driver Dashboard (Exec View)</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="?page=gmdash" class="nav-link">
-                      <i class="fa fa-balance-scale nav-icon"></i>
+                      <i class="fa fa-user-circle nav-icon"></i>
                       <p>Driver Dashboard (GM View)</p>
                     </a>
                   </li>
