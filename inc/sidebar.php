@@ -51,7 +51,7 @@
           </li> -->
           
           <li class="nav-item">
-            <a href="https://form.asana.com/?k=5d7mrjsTZTFAG8-yYkOR2w&d=1204000614965838" class="nav-link">
+            <a href="https://form.asana.com/?k=5d7mrjsTZTFAG8-yYkOR2w&d=1204000614965838"  target="_blank" class="nav-link">
               <i class="nav-icon fa fa-check-circle"></i>
               <p>
                  Report Requests<br><span style="font-size:60%;"><i>opens a new page</i></span>
@@ -79,41 +79,55 @@
 
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="https://temcologistics.domo.com/" class="nav-link">
+                <a href="https://temcologistics.domo.com/" target="_blank" class="nav-link">
                   <i class="fa fa-user-circle nav-icon"></i>
                   <p>Your DOMO website<br><span style="font-size:60%;"><i>opens a new page</i></span></p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="?page=cidash" class="nav-link">
-                  <i class="fa fa-balance-scale nav-icon"></i>
-                  <p>Cost Index Dashboard</p>
+                <a href="?page=opexdash" class="nav-link">
+                  <i class="fa fa-usd nav-icon"></i>
+                  <p>Operational Expense Dashboard</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="?page=M100dash" class="nav-link">
+                  <i class="fa fa-exclamation-triangle nav-icon"></i>
+                  <p>Drivers Without Deliveries</p>
                 </a>
               </li>
           
-<!--          <li class="nav-item has-treeview">
-                <a href="#" class="nav-link">
+          <li class="nav-item has-treeview">
+                <a href="?page=cidash" class="nav-link">
                   <i class="nav-icon fa fa-truck"></i>
                   <p>
-                  Driver Dashboards
+                  Cost Index Dashboards
                     <i class="right fa fa-angle-left"></i>
                   </p>
                 </a>
-                <ul class="nav nav-treeview">-->
+                <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="?page=opexdash" class="nav-link">
-                      <i class="fa fa-usd nav-icon"></i>
-                      <p>Operational Expense Dashboard</p>
+                    <a href="?page=cihdash" class="nav-link">
+                      <i class="fa fa-balance-scale nav-icon"></i>
+                      <p>CI: Hours</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="?page=M100dash" class="nav-link">
-                      <i class="fa fa-exclamation-triangle nav-icon"></i>
-                      <p>Drivers Without Deliveries</p>
+                    <a href="?page=ciddash" class="nav-link">
+                      <i class="fa fa-balance-scale nav-icon"></i>
+                      <p>CI: Deliveries</p>
                     </a>
                   </li>
-                <!--</ul>  
-              </li>-->
+                  <li class="nav-item">
+                    <a href="?page=cisdash" class="nav-link">
+                      <i class="fa fa-balance-scale nav-icon"></i>
+                      <p>CI: Stops Per Truck</p>
+                    </a>
+                  </li>
+                  
+
+                </ul>  
+              </li>
             </ul>
 
 
