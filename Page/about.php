@@ -58,7 +58,7 @@ Training of new BI Engineers.
         </div><div class="rc_member rc_member_3col">
                             <h2>Robb Neale</h2>
                                         <h3>Package IE  BI Engineer</h3>
-                                        <div class="rc_member_img" style="background-image: url('images/profiles/Robb.jpg');"></div>
+                                        <div class="rc_member_img" style="background-image: url('dist\img\T_Logo_big.png');"></div>
                         <div class="rc_member_details">
                                     <p>Reporting Responsibilities:
 Maintenance and Updating of the Daily Dispatch Report.
@@ -68,13 +68,13 @@ New Report Development and Automation.
 </p>
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:rneale@ups.com"><li><img class="rc_member_icon" src="images/profiles/Robb.jpg" width="250px" /></li></a>
+                                            <a href="mailto:rneale@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" width="250px" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
                             <h2>Andy Duong </h2>
                                         <h3>Package IE  BI Engineer</h3>
-                                        <div class="rc_member_img" style="background-image: url('images/profiles/Andy.jpg');"></div>
+                                        <div class="rc_member_img" style="background-image: url('dist\img\T_Logo_big.png');"></div>
                         <div class="rc_member_details">
                                     <p>Reporting Responsibilities:
 Maintenance and Updating of Gap and PPH Calculation reports.
@@ -83,13 +83,13 @@ Daily Maintenance of local reports and databases.
 </p>
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:aduong@ups.com"><li><img class="rc_member_icon" src="images/profiles/Andy.jpg" width="250px" /></li></a>
+                                            <a href="mailto:aduong@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" width="250px" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
                             <h2>Eduardo Mejia</h2>
                                         <h3>Trans OE  BI Engineer</h3>
-                                        <div class="rc_member_img" style="background-image: url('images/profiles/eddie.png');"></div>
+                                        <div class="rc_member_img" style="background-image: url('dist\img\T_Logo_big.png');"></div>
                         <div class="rc_member_details">
                                     <p>Skills/Achievements:
 Knowledgeable in HTML & Visual Basic.
@@ -100,17 +100,17 @@ Access.
 </p>
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:emejia@ups.com"><li><img class="rc_member_icon" src="images/profiles/eddie.png" width="250px" /></li></a>
+                                            <a href="mailto:emejia@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" width="250px" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
                             <h2>Evelyn Melendez</h2>
                                         <h3>Package OE  BI Engineer</h3>
-                                        <div class="rc_member_img" style="background-image: url('images/profiles/EvilLyn.png');"></div>
+                                        <div class="rc_member_img" style="background-image: url('dist\img\T_Logo_big.png');"></div>
                         <div class="rc_member_details">
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:emelendez@ups.com"><li><img class="rc_member_icon" src="images/profiles/EvilLyn.png" width="250px" /></li></a>
+                                            <a href="mailto:emelendez@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" width="250px" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">

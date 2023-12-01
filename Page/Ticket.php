@@ -1,1 +1,1 @@
-<div align="right"><iframe src="Ticket/index.php" width="80%" height="625" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+<div align="right"><iframe src="Ticket/index.php" width="80%" height="1000" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
