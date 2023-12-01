@@ -86,31 +86,33 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="?page=recap" class="nav-link">
-                  <i class="fa fa-calendar-alt nav-icon"></i>
+                  <i class="fa fa-usd nav-icon"></i>
                   <p>Cost Index Dashboard</p>
                 </a>
               </li>
           
               <li class="nav-item has-treeview">
                 <a href="#" class="nav-link">
-                  <i class="nav-icon fa fa-tools"></i>
+                  <i class="nav-icon fa fa-truck"></i>
                   <p>
                   Driver Dashboards
                     <i class="right fa fa-angle-left"></i>
                   </p>
                 </a>
-                <li class="nav-item">
-                  <a href="?page=exdash" class="nav-link">
-                    <i class="fa fa-balance-scale nav-icon"></i>
-                    <p>Driver Dashboard (Exec View)</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="?page=gmdash" class="nav-link">
-                    <i class="fa fa-balance-scale nav-icon"></i>
-                    <p>Driver Dashboard (GM View)</p>
-                  </a>
-                </li>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="?page=exdash" class="nav-link">
+                      <i class="fa fa-balance-scale nav-icon"></i>
+                      <p>Driver Dashboard (Exec View)</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="?page=gmdash" class="nav-link">
+                      <i class="fa fa-balance-scale nav-icon"></i>
+                      <p>Driver Dashboard (GM View)</p>
+                    </a>
+                  </li>
+                </ul>  
               </li>
             </ul>
           </li>
