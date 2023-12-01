@@ -89,42 +89,44 @@
                   <p>Cost Index Dashboard</p>
                 </a>
               </li>
-              <ul class="nav nav-treeview">
-                <li class="nav-item has-treeview">
-                  <a href="#" class="nav-link">
-                    <i class="nav-icon fa fa-tools"></i>
-                    <p>
-                      Driver Dashboard
-                      <i class="right fa fa-angle-left"></i>
-                    </p>
-                  </a>
-                  <li class="nav-item">
-                    <a href="?page=dmdash" class="nav-link">
-                      <i class="fa fa-balance-scale nav-icon"></i>
-                      <p>Driver Manager View</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="?page=gmdash" class="nav-link">
-                      <i class="fa fa-balance-scale nav-icon"></i>
-                      <p>General Manager View</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="?page=rmdash" class="nav-link">
-                      <i class="fa fa-balance-scale nav-icon"></i>
-                      <p>Regional Manager View</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="?page=exdash" class="nav-link">
-                      <i class="fa fa-balance-scale nav-icon"></i>
-                      <p>Executive View</p>
-                    </a>
-                  </li>
-                </li>
-              </ul>
             </ul>
+            
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fa fa-tools"></i>
+                  <p>
+                    Driver Dashboard
+                    <i class="right fa fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="?page=dmdash" class="nav-link">
+                        <i class="fa fa-balance-scale nav-icon"></i>
+                        <p>Driver Manager View</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="?page=gmdash" class="nav-link">
+                        <i class="fa fa-balance-scale nav-icon"></i>
+                        <p>General Manager View</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="?page=rmdash" class="nav-link">
+                        <i class="fa fa-balance-scale nav-icon"></i>
+                        <p>Regional Manager View</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="?page=exdash" class="nav-link">
+                        <i class="fa fa-balance-scale nav-icon"></i>
+                        <p>Executive View</p>
+                      </a>
+                    </li>
+                  </li>
+                </ul>
+            
           </li>
          
         </ul>
