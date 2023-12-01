@@ -19,9 +19,9 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="container-fluid">
+      <!-- <div class="container-fluid"> -->
         <center>
-          <div class="col-md-6">
+          <div class="col-md-8">
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Welcome</h3>
@@ -59,7 +59,7 @@
           <!-- /.col -->
         <!--/div -->
         
-      </div><!-- /.container-fluid -->
+      <!--</div>--><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
   </div>

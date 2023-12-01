@@ -54,7 +54,7 @@
             <a href="https://form.asana.com/?k=5d7mrjsTZTFAG8-yYkOR2w&d=1204000614965838" class="nav-link">
               <i class="nav-icon fa fa-check-circle"></i>
               <p>
-                 Report Requests<br><span style="font-size:40%;"><i>opens a new page</i></span>
+                 Report Requests<br><span style="font-size:60%;"><i>opens a new page</i></span>
               </p>
             </a>
           </li>
@@ -81,7 +81,7 @@
               <li class="nav-item">
                 <a href="https://temcologistics.domo.com/" class="nav-link">
                   <i class="fa fa-user-circle nav-icon"></i>
-                  <p>Your DOMO website<br><span style="font-size:40%;"><i>opens a new page</i></span></p>
+                  <p>Your DOMO website<br><span style="font-size:60%;"><i>opens a new page</i></span></p>
                 </a>
               </li>
               <li class="nav-item">
@@ -108,7 +108,7 @@
                   </li>
                   <li class="nav-item">
                     <a href="?page=M100dash" class="nav-link">
-                      <i class="fa fa-user-circle nav-icon"></i>
+                      <i class="fa fa-exclamation-triangle nav-icon"></i>
                       <p>Drivers Without Deliveries</p>
                     </a>
                   </li>
