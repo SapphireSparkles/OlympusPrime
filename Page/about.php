@@ -30,18 +30,18 @@
     <p></p>
     <div class="rc_member rc_member_3col">
                             <h2>Mark Beard</h2>
-                                        <h3>Hub Planner GV Night & BI Team Leader</h3>
-                                        <div class="rc_member_img" style="background-image: url('images/News/mark.jpg');"></div>
+                                        <h3>Hub Planner GV Night & BI Team Supervisor</h3>
+                                        <div class="rc_member_img" style="background-image: url('images/profiles/mark.jpg');"></div>
                         <div class="rc_member_details">
                                     <p>Developer of IE Portal, Reports, Web version of Subscription manager and many more projects </p>
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:mbeard@ups.com"><li><img class="rc_member_icon" src="media/com_rcteam/assets/img/email.png" /></li></a>
+                                            <a href="mailto:mbeard@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
                             <h2>Mike Kennedy</h2>
-                                        <h3>Trans OE  BI Engineer & Team Helmsman</h3>
+                                        <h3>Transportation/Package OE BI Engineer & Team Lead</h3>
                                         <div class="rc_member_img" style="background-image: url('images/profiles/Mike.jpg');"></div>
                         <div class="rc_member_details">
                                     <p>Reporting Responsibilities:
@@ -52,7 +52,7 @@ Training of new BI Engineers.
 </p>
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:sna1mxk@ups.com"><li><img class="rc_member_icon" src="media/com_rcteam/assets/img/email.png" /></li></a>
+                                            <a href="mailto:sna1mxk@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
@@ -68,7 +68,7 @@ New Report Development and Automation.
 </p>
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:rneale@ups.com"><li><img class="rc_member_icon" src="media/com_rcteam/assets/img/email.png" /></li></a>
+                                            <a href="mailto:rneale@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
@@ -83,7 +83,7 @@ Daily Maintenance of local reports and databases.
 </p>
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:aduong@ups.com"><li><img class="rc_member_icon" src="media/com_rcteam/assets/img/email.png" /></li></a>
+                                            <a href="mailto:aduong@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
@@ -100,7 +100,7 @@ Access.
 </p>
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:emejia@ups.com"><li><img class="rc_member_icon" src="media/com_rcteam/assets/img/email.png" /></li></a>
+                                            <a href="mailto:emejia@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
@@ -110,7 +110,7 @@ Access.
                         <div class="rc_member_details">
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:emelendez@ups.com"><li><img class="rc_member_icon" src="media/com_rcteam/assets/img/email.png" /></li></a>
+                                            <a href="mailto:emelendez@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
@@ -119,7 +119,7 @@ Access.
                                     <div class="rc_member_details">
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:sathikunsin@ups.com"><li><img class="rc_member_icon" src="media/com_rcteam/assets/img/email.png" /></li></a>
+                                            <a href="mailto:sathikunsin@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
@@ -128,7 +128,7 @@ Access.
                                     <div class="rc_member_details">
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:mstoic@ups.com"><li><img class="rc_member_icon" src="media/com_rcteam/assets/img/email.png" /></li></a>
+                                            <a href="mailto:mstoic@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
@@ -137,7 +137,7 @@ Access.
                                     <div class="rc_member_details">
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:damarisromero@ups.com"><li><img class="rc_member_icon" src="media/com_rcteam/assets/img/email.png" /></li></a>
+                                            <a href="mailto:damarisromero@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
@@ -147,7 +147,7 @@ Access.
                         <div class="rc_member_details">
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:jnitschke@ups.com"><li><img class="rc_member_icon" src="media/com_rcteam/assets/img/email.png" /></li></a>
+                                            <a href="mailto:jnitschke@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div></div>
