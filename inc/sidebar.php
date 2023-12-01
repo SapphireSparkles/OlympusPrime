@@ -119,7 +119,7 @@
                   <li class="nav-item">
                     <a href="?page=exdash" class="nav-link">
                       <i class="fa fa-balance-scale nav-icon"></i>
-                      <p>Exec View</p>
+                      <p>Executive View</p>
                     </a>
                   </li>
                 </li>
