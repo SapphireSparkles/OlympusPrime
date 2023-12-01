@@ -99,7 +99,7 @@
           
           <li class="nav-item has-treeview">
                 <a href="?page=cidash" class="nav-link">
-                  <i class="nav-icon fa fa-truck"></i>
+                  <i class="nav-icon fa fa-balance-scale"></i>
                   <p>
                   Cost Index Dashboards
                     <i class="right fa fa-angle-left"></i>
@@ -108,19 +108,19 @@
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
                     <a href="?page=cihdash" class="nav-link">
-                      <i class="fa fa-balance-scale nav-icon"></i>
+                      <i class="fa fa-hourglass-half nav-icon"></i>
                       <p>CI: Hours</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="?page=ciddash" class="nav-link">
-                      <i class="fa fa-balance-scale nav-icon"></i>
+                      <i class="fa fa-truck nav-icon"></i>
                       <p>CI: Deliveries</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="?page=cisdash" class="nav-link">
-                      <i class="fa fa-balance-scale nav-icon"></i>
+                      <i class="fa fa-tachometer nav-icon"></i>
                       <p>CI: Stops Per Truck</p>
                     </a>
                   </li>
