@@ -36,7 +36,7 @@
                                     <p>Developer of IE Portal, Reports, Web version of Subscription manager and many more projects </p>
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:mbeard@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
+                                            <a href="mailto:mbeard@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" width="25px" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
@@ -52,7 +52,7 @@ Training of new BI Engineers.
 </p>
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:sna1mxk@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
+                                            <a href="mailto:sna1mxk@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" width="25px" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
@@ -68,7 +68,7 @@ New Report Development and Automation.
 </p>
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:rneale@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
+                                            <a href="mailto:rneale@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" width="25px" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
@@ -83,7 +83,7 @@ Daily Maintenance of local reports and databases.
 </p>
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:aduong@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
+                                            <a href="mailto:aduong@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" width="25px" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
@@ -100,7 +100,7 @@ Access.
 </p>
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:emejia@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
+                                            <a href="mailto:emejia@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" width="25px" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
@@ -110,7 +110,7 @@ Access.
                         <div class="rc_member_details">
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:emelendez@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
+                                            <a href="mailto:emelendez@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" width="25px" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
@@ -119,7 +119,7 @@ Access.
                                     <div class="rc_member_details">
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:sathikunsin@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
+                                            <a href="mailto:sathikunsin@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" width="25px" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
@@ -128,7 +128,7 @@ Access.
                                     <div class="rc_member_details">
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:mstoic@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
+                                            <a href="mailto:mstoic@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" width="25px" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
@@ -137,7 +137,7 @@ Access.
                                     <div class="rc_member_details">
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:damarisromero@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
+                                            <a href="mailto:damarisromero@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" width="25px" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div><div class="rc_member rc_member_3col">
@@ -147,7 +147,7 @@ Access.
                         <div class="rc_member_details">
                    
                 <ul class="rc_member_details">
-                                            <a href="mailto:jnitschke@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" /></li></a>
+                                            <a href="mailto:jnitschke@ups.com"><li><img class="rc_member_icon" src="dist\img\T_Logo_big.png" width="25px" /></li></a>
                                                                                                                                                                                                                         </ul>
             </div>
         </div></div>
