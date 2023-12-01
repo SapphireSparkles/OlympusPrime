@@ -1,27 +1,2 @@
-<?php error_reporting(0); ?> <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-              <li class="breadcrumb-item active">Add-A-Line</li>
-            </ol>
-          </div>
-        </div>
-      </div><!-- /.container-fluid -->
-    </section>
+<div align="right"><iframe src="https://ups.app.box.com/embed/s/vwjebyl6u4a6iskkaoz2e7sm913l1ynf?sortColumn=date&view=icon" width="80%" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe> 
 
-    <!-- Main content -->
-    <section class="content">
-<?php include "SvcAddaline/index.php" ?>
-
-</section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
