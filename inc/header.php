@@ -41,7 +41,7 @@
 <div class="wrapper">
   <!-- Navbar -->
   <!-- <nav class="main-header navbar navbar-expand   bg-info navbar-light border-bottom"> -->
-  <nav class="main-header navbar navbar-expand   bg-info border-bottom" style="color: #5685C5">
+  <nav class="main-header navbar navbar-expand   bg-info border-bottom" style="background-color: #5685C5">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
