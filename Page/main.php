@@ -24,13 +24,13 @@
           <div class="col-md-8">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Welcome</h3>
+                <h3 class="card-title">Welcome 
+                  <?php if(AuthComponent::user('name')): ?>
+                  <?php echo AuthComponent::user('name'); ?>
+                  <?php else: ?>anon, Log in?
+                  <?php endif; ?>
+                </h3>
               </div>
-              <?php if(AuthComponent::user('name')): ?>
-                  Welcome <?php echo AuthComponent::user('name'); ?>
-              <?php else: ?>
-                  Welcom anon, Log in?
-              <?php endif; ?>
 
 
               <!-- /.card-header -->
