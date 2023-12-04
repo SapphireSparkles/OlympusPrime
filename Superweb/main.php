@@ -1,1 +1,1 @@
-<center><img src="/Recap/Minions-at-work.jpg">
+<center><img src="/Minions-at-work.jpg">
