@@ -21,8 +21,24 @@
     <section class="content">
 <?php 
 
+public static String getEmail(HttpContext context)
+{
+    String identifier = "X-MS-CLIENT-PRINCIPAL-NAME";
+    IEnumerable<string> headerValues = context.Request.Headers.GetValues(identifier);
+    if (headerValues == null)
+    {
+        System.Diagnostics.Debug("No email found!");
+        return "";
+    }
+    else { 
+        System.Diagnostics.Debug(headerValues.FirstOrDefault());
+        return headerValues.FirstOrDefault();
+    }
+}
+
+
 /*  include "Superweb/reports.php" ?> */
-include "Superweb\Minions-at-work.jpg" ?>
+include "Superweb\main.php" ?>
 
 </section>
     <!-- /.content -->

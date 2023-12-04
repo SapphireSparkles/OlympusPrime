@@ -16,7 +16,7 @@ $Updateme = 0;
 
 $servername = "ttyche2.mysql.database.azure.com";
 $username = "ttyche2";
-$password = "ThI$V3rY$tR0nG";
+$password = 'ThI$V3rY$tR0nG';
 $database = "dbzeus";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password);

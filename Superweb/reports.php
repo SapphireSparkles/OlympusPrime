@@ -6,7 +6,7 @@ include ("Superweb/inc/queries.php");
 
 if($Updateme==0){
 if(!$EID){
-include("addins/views.php");
+//include("addins/views.php");
 Include "index.php";
 }else {
 if(RecordExists($db,$EID)== True) { 
