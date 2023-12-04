@@ -40,17 +40,18 @@
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand   bg-info navbar-light border-bottom"  style="background-color: #636363">
+  <!-- <nav class="main-header navbar navbar-expand   bg-info navbar-light border-bottom"> -->
+  <nav class="main-header navbar navbar-expand   bg-info border-bottom" style="color: #5685C5">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"  style="color: #ffffff"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index.php" class="nav-link">Home</a>
+        <a href="index.php" class="nav-link" style="color: #ffffff">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="?page=about2" class="nav-link">Contact</a>
+        <a href="?page=about2" class="nav-link" style="color: #ffffff">Contact</a>
       </li>
     </ul>
   </nav>
