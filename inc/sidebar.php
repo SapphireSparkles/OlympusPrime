@@ -1,5 +1,5 @@
 <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #5685C5">
     <!-- Brand Logo -->
     <a href="index.php" class="brand-link  bg-info">
       <img src="dist/img/T_Logo_big.png"
@@ -42,7 +42,7 @@
           </li>
           
 <!--           <li class="nav-item">
-            <a href="?page=superweb" class="nav-link">
+            <a href="?page=subweb" class="nav-link">
               <i class="nav-icon fa fa-tasks"></i>
               <p>
              Subscription Manager

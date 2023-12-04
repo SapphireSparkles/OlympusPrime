@@ -40,7 +40,7 @@
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand   bg-info navbar-light border-bottom">
+  <nav class="main-header navbar navbar-expand   bg-info navbar-light border-bottom"  style="background-color: #636363">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
