@@ -19,10 +19,9 @@
 
     <!-- Main content -->
     <section class="content">
-<?php 
+<?php include "Superweb/main.php" ?>
 
-/*  include "Superweb/reports.php" ?> */
-include "Superweb\main.php" ?>
+<!-- include "Superweb/reports.php" -->
 
 </section>
     <!-- /.content -->
