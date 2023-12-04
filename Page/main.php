@@ -24,11 +24,9 @@
           <div class="col-md-8">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Welcome 
-                  <?php if(AuthComponent::user('name')): ?>
-                  <?php echo AuthComponent::user('name'); ?>
-                  <?php else: ?>anon, Log in?
-                  <?php endif; ?>
+                <h3 class="card-title">Welcome: 
+                  <?php $username = getenv('USERNAME') ?: getenv('USER');
+                    echo $username; // e.g. root or www-data ?>
                 </h3>
               </div>
 
