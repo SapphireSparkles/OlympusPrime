@@ -1,1 +1,1 @@
-<center><img src="/Minions-at-work.jpg">
+<center><img src="Superweb\Minions-at-work.jpg">
