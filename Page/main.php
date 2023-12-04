@@ -26,6 +26,13 @@
               <div class="card-header">
                 <h3 class="card-title">Welcome</h3>
               </div>
+              <?php if(AuthComponent::user('name')): ?>
+                  Welcome <?php echo AuthComponent::user('name'); ?>
+              <?php else: ?>
+                  Welcom anon, Log in?
+              <?php endif; ?>
+
+
               <!-- /.card-header -->
               <div class="card-body">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
