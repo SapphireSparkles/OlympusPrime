@@ -27,9 +27,6 @@
                 <h3 class="card-title">Welcome:: 
                   <!--<?php //$username = getenv('USER') ?: getenv('REMOTE_USER'); ?>-->
                   <?php $username = $_SERVER['AUTH_USER'];
-                <h3 class="card-title">Welcome:: 
-                  <!--<?php //$username = getenv('USER') ?: getenv('REMOTE_USER');-->
-                  <?php $username = $_SERVER['AUTH_USER'];
                     echo $username; // e.g. root or www-data ?>
                 </h3>
               </div>
