@@ -31,7 +31,6 @@
                 </h3>
               </div>
 
-
               <!-- /.card-header -->
               <div class="card-body">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
