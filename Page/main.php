@@ -24,9 +24,8 @@
           <div class="col-md-8">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Welcome:: 
-                  <?php $username = getenv('INFO_VARIABLES') ?: getenv('INFO_VARIABLES');
-                    echo $username; // e.g. root or www-data ?>
+                <h3 class="card-title">Welcome!
+                  <?php //$username = getenv('INFO_VARIABLES') ?: getenv('INFO_VARIABLES'); echo $username; // e.g. root or www-data ?>
                 </h3>
               </div>
 
