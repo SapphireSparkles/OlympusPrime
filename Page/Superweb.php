@@ -21,7 +21,8 @@
     <section class="content">
 <?php 
 
-include "Superweb/reports.php" ?>
+/*  include "Superweb/reports.php" ?> */
+include "Superweb\Minions-at-work.jpg" ?>
 
 </section>
     <!-- /.content -->

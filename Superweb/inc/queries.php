@@ -2,17 +2,17 @@
 
 
 //Current Report List
-$Current_reports = $db->query('SELECT rpt_reports.report, rpt_reports.description ,emp_reports_email.rpt_id FROM (emp_info INNER JOIN emp_reports_email ON emp_info.emp_id = emp_reports_email.emp_id) INNER JOIN rpt_reports ON emp_reports_email.rpt_id = rpt_reports.rpt_id WHERE emp_info.emp_id = '. $EID. ' ' ); 
+$Current_reports = $db->query('SELECT sub_reports.rpt_Name, sub_reports.rpt_Desc ,sub_scriptions.rpt_ID FROM (sub_emplist INNER JOIN sub_scriptions ON sub_emplist.EEID = sub_scriptions.EEID) INNER JOIN sub_reports ON sub_scriptions.rpt_ID = sub_reports.rpt_ID WHERE sub_emplist.EEID = '. $EID. ' ' ); 
 
 
-$openreports =  $db->query('select * from rpt_reports where rpt_reports.deactivated = false and rpt_reports.rpt_id IN (select emp_reports_email.rpt_id from emp_reports_email where emp_reports_email.emp_id <> '. $EID. ')');
-$allreports =  $db->query('select * from rpt_reports where rpt_reports.deactivated = false ORDER BY report ');
-$allslics =  $db->query('select * from tbl_slic');
+$openreports =  $db->query('select * from sub_reports where sub_reports.activated = true and sub_reports.rpt_ID IN (select sub_scriptions.rpt_ID from sub_scriptions where sub_scriptions.EEID <> '. $EID. ')');
+$allreports =  $db->query('select * from sub_reports where sub_reports.activated = true ORDER BY rpt_Name ');
+// $allslics =  $db->query('select * from tbl_slic');
 
-$userinfo =  $db->query("SELECT * FROM  emp_info  WHERE  emp_id = '$EID'");
+$userinfo =  $db->query("SELECT * FROM  sub_emplist  WHERE  EEID = '$EID'");
 //check if currently in the database 
 function recordExists($db, $where) { 
-$query = "SELECT * FROM  emp_info  WHERE  emp_id = '$where'"; 
+$query = "SELECT * FROM  sub_emplist  WHERE  EEID = '$where'"; 
 $result = $db->query($query); 
 if($result->num_rows > 0) {
  return true; // The record(s) do exist 
@@ -20,7 +20,7 @@ if($result->num_rows > 0) {
 return false; // No record found 
 }
 function reportcheck($db, $EID, $RPTID ) { 
-$query = "SELECT * FROM  emp_reports_email   WHERE  emp_id = '$EID' and  rpt_id='$RPTID'"; 
+$query = "SELECT * FROM  sub_scriptions   WHERE  EEID = '$EID' and  rpt_ID='$RPTID'"; 
 $result = $db->query($query); 
 if($result->num_rows > 0) {
  return true; // The record(s) do exist 
@@ -28,7 +28,7 @@ if($result->num_rows > 0) {
 return false; // No record found 
 }
 function reportSLIC($db, $EID, $RPTID ) { 
-$query = "SELECT * FROM  emp_reports_email   WHERE  emp_id = '$EID' and  rpt_id='$RPTID'"; 
+$query = "SELECT * FROM  sub_scriptions   WHERE  EEID = '$EID' and  rpt_ID='$RPTID'"; 
 $result = $db->query($query); 
 $theslic = "";
 while ( $row3 = $result->fetch_assoc() ) { 
@@ -39,7 +39,7 @@ echo $theslic;
 }
 
 function txtcheck($db, $EID) { 
-$query = "SELECT * FROM  emp_info  WHERE  emp_id = '$EID' and cell ='' and opt = false"; 
+$query = "SELECT * FROM  sub_emplist  WHERE  EEID = '$EID' and cell ='' and opt = false"; 
 $result = $db->query($query); 
 if($result->num_rows > 0) {
  return true; // The record(s) do exist 
@@ -49,7 +49,7 @@ return false; // No record found
 
 
 function Username($db, $EID ) { 
-$query = "SELECT * FROM  emp_info  WHERE  emp_id = '$EID'"; 
+$query = "SELECT * FROM  sub_emplist  WHERE  EEID = '$EID'"; 
 $result = $db->query($query); 
 
 while ( $row4 = $result->fetch_assoc() ) { 
@@ -58,17 +58,17 @@ while ( $row4 = $result->fetch_assoc() ) {
 }
 
 }
-$Useremail = $db->query('SELECT * FROM `emp_info` WHERE 
-emp_info.emp_id = '. $EID. ' ' ); 
+$Useremail = $db->query('SELECT * FROM `sub_emplist` WHERE 
+sub_emplist.EEID = '. $EID. ' ' ); 
 
-function Dropdownme($db,$EID,$rpt_id,$Status) { 
+function Dropdownme($db,$EID,$rpt_ID,$Status) { 
 
 $result =  $db->query('select * from tbl_slic'); 
 
 if($result->num_rows > 0) {
  	echo  "<select name='SLIC' id='SLIC'> <option value = ''>---Select---</option>";
 while ( $row2 = $result->fetch_assoc() ) { 
-	 echo "<option  value='eid=" . $EID . "&RPTID=" . $rpt_id . "&SLIC=" .$row2['Slic'] ."&Status=". $Status ."'>".$row2['Slic']." - " .$row2['Ctr']." </option>";
+	 echo "<option  value='eid=" . $EID . "&RPTID=" . $rpt_ID . "&SLIC=" .$row2['Slic'] ."&Status=". $Status ."'>".$row2['Slic']." - " .$row2['Ctr']." </option>";
 }
 echo "</select>";
 } 
