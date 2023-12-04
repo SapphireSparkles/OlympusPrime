@@ -2,7 +2,7 @@
   <!-- <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #636363"> -->
   <aside class="main-sidebar" style="background-color: #636363">
     <!-- Brand Logo -->
-    <a href="index.php" class="brand-link  bg-info">
+    <a href="index.php" class="brand-link  bg-info" style="background-color: #56739C">
       <img src="dist/img/T_Logo_big.png"
            alt="Temco"
            class="brand-image "
