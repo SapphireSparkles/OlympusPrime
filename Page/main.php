@@ -24,8 +24,8 @@
           <div class="col-md-8">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Welcome:: 
-                  <?php $username = getenv('REMOTE_USER');
+                <h3 class="card-title">Welcome: 
+                  <?php $username = getenv('REMOTE_USER') ?: getenv('USER');
                     echo $username; // e.g. root or www-data ?>
                 </h3>
               </div>
