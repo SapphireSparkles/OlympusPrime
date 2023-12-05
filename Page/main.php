@@ -38,10 +38,28 @@
                       <img class="d-block w-100" src="images/banners/Carson3pl1.png" width="100%" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                      <img class="d-block w-100" src="images/banners/Newark3pl1.png" width="100%"  alt="Second slide">
+                      <img class="d-block w-100" src="images/banners/Pomona3PL1.png" width="100%"  alt="Second slide">
                     </div>
                     <div class="carousel-item">
                       <img class="d-block w-100" src="images/banners/SanDiegoMDO1.png" width="100%"  alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/VegasMDO1.png" width="100%"  alt="Fourth slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/BurbankMDO1.png" width="100%"  alt="5th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/Newark3pl1.png" width="100%"  alt="6th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/TucsonMDO1.png" width="100%"  alt="7th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/Pomona3PL2.png" width="100%"  alt="8th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/Newark3pl2.png" width="100%"  alt="9th slide">
                     </div>
                   </div>
                   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
