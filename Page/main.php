@@ -35,6 +35,9 @@
                   
                   <div class="carousel-inner">
                     <div class="carousel-item active">
+                      <img class="d-block w-100" src="images/banners/Aiea3pl1.png" width="100%" alt="Zeroth slide">
+                    </div>
+                    <div class="carousel-item active">
                       <img class="d-block w-100" src="images/banners/Carson3pl1.png" width="100%" alt="First slide">
                     </div>
                     <div class="carousel-item">
@@ -63,6 +66,33 @@
                     </div>
                     <div class="carousel-item">
                       <img class="d-block w-100" src="images/banners/Newark3pl2.png" width="100%"  alt="10th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/Albuquerque3pl1.png" width="100%"  alt="11th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/Mesa3pl1.png" width="100%"  alt="12th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/GrandJunction3pl1.png" width="100%"  alt="13th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/Flagstaff3PL1.png" width="100%"  alt="14th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/RanchoCordova3PL1.png" width="100%"  alt="15th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/TracyMDO1.png" width="100%"  alt="16th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/WestSacMDO1.png" width="100%"  alt="17th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/Sisters3pl1.png" width="100%"  alt="18th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/SalemMDO1.png" width="100%"  alt="19th slide">
                     </div>
                   </div>
                   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
