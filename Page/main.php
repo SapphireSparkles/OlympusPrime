@@ -94,6 +94,9 @@
                     <div class="carousel-item">
                       <img class="d-block w-100" src="images/banners/SalemMDO1.png" width="100%"  alt="19th slide">
                     </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/TukwilaMDO1.png" width="100%"  alt="20th slide">
+                    </div>
                   </div>
                   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
