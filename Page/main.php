@@ -60,10 +60,10 @@
                       <img class="d-block w-100" src="images/banners/TucsonMDO1.png" width="100%"  alt="7th slide">
                     </div>
                     <div class="carousel-item">
-                      <img class="d-block w-100" src="images/banners/Pomona3PL2.png" width="100%"  alt="8th slide">
+                      <img class="d-block w-100" src="images/banners/Marysville3PL1.png" width="100%"  alt="8th slide">
                     </div>
                     <div class="carousel-item">
-                      <img class="d-block w-100" src="images/banners/SanDiegoMDO2.png" width="100%"  alt="9th slide">
+                      <img class="d-block w-100" src="images/banners/SpokaneMDO1.png" width="100%"  alt="9th slide">
                     </div>
                     <div class="carousel-item">
                       <img class="d-block w-100" src="images/banners/Newark3pl2.png" width="100%"  alt="10th slide">
