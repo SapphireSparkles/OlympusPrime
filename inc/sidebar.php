@@ -5,19 +5,20 @@
     <a href="index.php" class="brand-link  bg-info" style="background-color: #56739C">
       <img src="dist/img/T_Logo_big.png"
            alt="Temco"
-           class="brand-image "
-           style="opacity: .8">
+           class="brand-image ">
       <span class="brand-text  font-weight-light">Temco BI Portal</span>
     </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <div class="user-panel mt-1 pb-1 mb-1 d-flex">
       </div>
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
+      <div class="os-content" style="padding: 0px 0px; height: 100%; width: 100%;">
+        
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library 
@@ -149,6 +150,7 @@
          
 
         </ul>
+      </div>
       </nav>
       <!-- /.sidebar-menu -->
     </div>
