@@ -19,9 +19,9 @@
 
     <!-- Main content -->
     <section class="content">
-<?php include "addins/FTP.php" ?>
+    <?php include "addins/FTP.php" ?>
 
-</section>
+    </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->

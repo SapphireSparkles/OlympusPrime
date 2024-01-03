@@ -22,7 +22,7 @@
       <!-- <div class="container-fluid"> -->
         <center>
           <!-- <div class="col-md-8"> -->
-          <div class="col-12 align-self-center">
+          <div class="col-12">
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Welcome!
@@ -110,6 +110,9 @@
                     </div>
                     <div class="carousel-item">
                       <img class="d-block w-100" src="images/banners/PortlandMDO1.png" width="100%"  alt="24th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/Armonk3pl1.png" width="100%"  alt="25th slide">
                     </div>
                   </div>
                   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
