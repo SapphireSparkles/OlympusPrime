@@ -99,13 +99,13 @@
               </li>
               <li class="nav-item">
                 <a href="?page=DialPadRpt" class="nav-link"  style="color: #ffffff">
-                  <i class="fa-solid fa-phone-volume"></i>
+                  <i class="fa fa-phone-square-alt nav-icon"></i>
                   <p>Dial Pad Dashboard</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="?page=SamsaraDeviceHealth" class="nav-link"  style="color: #ffffff">
-                  <i class="fa-solid fa-kit-medical"></i>
+                  <i class="fa fa-briefcase-medical nav-icon"></i>
                   <p>Samsara Health</p>
                 </a>
               </li>
