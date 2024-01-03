@@ -51,23 +51,23 @@
             </a>
           </li> -->
           
-          <li class="nav-item">
+<!--           <li class="nav-item">
             <a href="https://form.asana.com/?k=5d7mrjsTZTFAG8-yYkOR2w&d=1204000614965838"  target="_blank" class="nav-link"  style="color: #ffffff">
               <i class="nav-icon fa fa-check-circle"></i>
               <p>
                  Report Requests<br><span style="font-size:60%;"><i>opens a new page</i></span>
               </p>
             </a>
-          </li>
+          </li> -->
           
-          <li class="nav-item">
+<!--           <li class="nav-item">
             <a href="?page=about2" class="nav-link"  style="color: #ffffff">
                <i class="nav-icon fa fa-address-book"></i>
               <p>
                 About Us
               </p>
             </a>
-          </li>
+          </li> -->
           
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link"  style="color: #99CCED">
