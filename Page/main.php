@@ -67,7 +67,7 @@
                       <img class="d-block w-100" src="images/banners/SpokaneMDO1.png" width="100%"  alt="9th slide">
                     </div>
                     <div class="carousel-item">
-                      <img class="d-block w-100" src="images/banners/Newark3pl2.png" width="100%"  alt="10th slide">
+                      <img class="d-block w-100" src="images/banners/Newark3pl3.png" width="100%"  alt="10th slide">
                     </div>
                     <div class="carousel-item">
                       <img class="d-block w-100" src="images/banners/Albuquerque3pl1.png" width="100%"  alt="11th slide">
