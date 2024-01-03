@@ -1,7 +1,7 @@
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <iframe src="https://public.domo.com/embed/pages/2R58v" width="80%" height="800" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+      <iframe src="https://public.domo.com/embed/pages/2R58v"  width="100%" height="850" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
     </section>
 </div>
   <!-- /.content-wrapper -->

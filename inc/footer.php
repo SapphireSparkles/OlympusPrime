@@ -23,13 +23,13 @@
 Bootstrap 4 -->
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- SlimScroll -->
-<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script> -->
 <!-- FastClick -->
-<script src="plugins/fastclick/fastclick.js"></script>
+<!-- <script src="plugins/fastclick/fastclick.js"></script> -->
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
+<!-- <script src="dist/js/demo.js"></script> -->
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>

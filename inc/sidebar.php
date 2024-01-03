@@ -111,7 +111,7 @@
                 </a>
               </li>
           
-          <li class="nav-item has-treeview">
+              <li class="nav-item has-treeview">
                 <a href="?page=cidash" class="nav-link"  style="color: #99CCED">
                   <b>&nbsp&nbsp</b><i class="nav-icon fa fa-balance-scale"></i>
                   <p  style="color: #99CCED">
