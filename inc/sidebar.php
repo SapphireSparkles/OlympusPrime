@@ -99,7 +99,7 @@
               </li>
               <li class="nav-item">
                 <a href="?page=DialPadRpt" class="nav-link"  style="color: #ffffff">
-                  <i class="fa fa-phone-square-alt nav-icon"></i>
+                  <i class="fa fa-phone-square nav-icon"></i>
                   <p>Dial Pad Dashboard</p>
                 </a>
               </li>
