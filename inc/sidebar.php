@@ -70,7 +70,7 @@
           </li>
           
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link"  style="color: #ffffff">
+            <a href="#" class="nav-link"  style="color: #99CCED">
               <i class="nav-icon fa fa-tools"></i>
               <p>
                Domo Reports
@@ -112,7 +112,7 @@
               </li>
           
               <li class="nav-item has-treeview">
-                <a href="?page=cidash" class="nav-link"  style="color: #99CCED">
+                <a href="?page=cidash" class="nav-link"  style="color: #ffffff">
                   <b>&nbsp&nbsp</b><i class="nav-icon fa fa-balance-scale"></i>
                   <p  style="color: #99CCED">
                   Cost Index Dashboards
@@ -121,20 +121,20 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="?page=cihdash" class="nav-link"  style="color: #99CCED">
-                      <b>&nbsp&nbsp&nbsp</b><i class="fa fa-hourglass-half nav-icon"></i>
+                    <a href="?page=cihdash" class="nav-link"  style="color: #ffffff">
+                      <b>&nbsp&nbsp&nbsp&nbsp&nbsp</b><i class="fa fa-hourglass-half nav-icon"></i>
                       <p>CI: Hours</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="?page=ciddash" class="nav-link"  style="color: #99CCED">
-                      <b>&nbsp&nbsp&nbsp</b><i class="fa fa-truck nav-icon"></i>
+                    <a href="?page=ciddash" class="nav-link"  style="color: #ffffff">
+                      <b>&nbsp&nbsp&nbsp&nbsp&nbsp</b><i class="fa fa-truck nav-icon"></i>
                       <p>CI: Deliveries</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="?page=cisdash" class="nav-link"  style="color: #99CCED">
-                      <b>&nbsp&nbsp&nbsp</b><i class="fa fa-tachometer nav-icon"></i>
+                    <a href="?page=cisdash" class="nav-link"  style="color: #ffffff">
+                      <b>&nbsp&nbsp&nbsp&nbsp&nbsp</b><i class="fa fa-tachometer nav-icon"></i>
                       <p>CI: Stops Per Truck</p>
                     </a>
                   </li>
