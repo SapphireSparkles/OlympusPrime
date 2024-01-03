@@ -21,7 +21,8 @@
     <section class="content">
       <!-- <div class="container-fluid"> -->
         <center>
-          <div class="col-md-8">
+      <!-- <div class="col-md-8"> -->
+          <div class="col-12">
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Welcome!
