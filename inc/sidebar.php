@@ -97,6 +97,18 @@
                   <p>Drivers Without Deliveries</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="?page=DialPadRpt" class="nav-link"  style="color: #ffffff">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <p>Dial Pad Dashboard</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="?page=SamsaraDeviceHealth" class="nav-link"  style="color: #ffffff">
+                  <i class="fa-solid fa-kit-medical"></i>
+                  <p>Samsara Health</p>
+                </a>
+              </li>
           
           <li class="nav-item has-treeview">
                 <a href="?page=cidash" class="nav-link"  style="color: #ffffff">
