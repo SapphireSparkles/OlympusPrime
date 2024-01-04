@@ -68,8 +68,7 @@
               </p>
             </a>
           </li> -->
-          <hr/>
-          <hr/>
+          <hr width="50px;" color="#ffffff" size="10"> 
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link"  style="color: #99CCED; padding-left: 4px;">
               <i class="nav-icon fa fa-tools"></i>
@@ -106,7 +105,7 @@
                 </a>
               </li>
           
-              <hr/>
+              <hr width="50px;" color="#ffffff" size="10">
               <li class="nav-item has-treeview">
                 <a href="?page=cidash" class="nav-link"  style="color: #ffffff;  padding-left: 16px;">
                   <i class="nav-icon fa fa-balance-scale"></i>
@@ -134,7 +133,7 @@
                       <p>CI: Stops Per Truck</p>
                     </a>
                   </li>
-                  <hr/>
+                  <hr width="50px;" color="#ffffff" size="10">
 
                 </ul> 
               <li class="nav-item">
