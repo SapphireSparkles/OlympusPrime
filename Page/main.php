@@ -122,7 +122,10 @@
                       <img class="d-block w-100" src="images/banners/AtlantaMDO1.png" width="100%"  alt="26th slide">
                     </div>
                     <div class="carousel-item">
-                      <img class="d-block w-100" src="images/banners/Baldwinsville3PL1.png" width="100%"  alt="26th slide">
+                      <img class="d-block w-100" src="images/banners/Baldwinsville3PL1.png" width="100%"  alt="27th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/BatonRouge3pl1.png" width="100%"  alt="28th slide">
                     </div>
                   </div>
                   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
