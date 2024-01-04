@@ -133,10 +133,10 @@
                       <i class="fa fa-tachometer nav-icon"></i>
                       <p>CI: Stops Per Truck</p>
                     </a>
-                  </li>
-                  <hr style="width:66%; color:#ffffff; margin-bottom: 1px; margin-top: 1px;">  
+                  </li> 
 
-                </ul> 
+                </ul>
+              <hr style="width:66%; color:#ffffff; margin-bottom: 1px; margin-top: 1px;">  
               <li class="nav-item">
                 <a href="https://temcologistics.domo.com/" target="_blank" class="nav-link"  style="color: #ffffff;  padding-left: 16px;">
                   <p><i class="fa fa-user-circle nav-icon"></i>
