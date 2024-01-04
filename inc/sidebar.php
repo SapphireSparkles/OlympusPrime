@@ -68,7 +68,7 @@
               </p>
             </a>
           </li> -->
-          <hr style="width:66%; color:ffffff" style="margin-bottom: 1px; margin-top: 1px;"> 
+          <hr style="width:66%; color:ffffff; margin-bottom: 1px; margin-top: 1px;"> 
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link"  style="color: #99CCED; padding-left: 4px;">
               <i class="nav-icon fa fa-tools"></i>
@@ -83,7 +83,7 @@
               <li class="nav-item">
                 <a href="?page=opexdash" class="nav-link"  style="color: #ffffff;  padding-left: 16px;">
                   <p><i class="fa fa-usd nav-icon"></i>
-                  Operational Expense</p><p style="text-align:center;">Dashboard</p>
+                  Operational Expense</p><br><p style="text-align:center;">Dashboard</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -105,7 +105,7 @@
                 </a>
               </li>
 
-              <hr style="width:66%; color:ffffff" style="margin-bottom: 1px; margin-top: 1px;">  
+              <hr style="width:66%; color:ffffff; margin-bottom: 1px; margin-top: 1px;">  
 
               <li class="nav-item has-treeview">
                 <a href="?page=cidash" class="nav-link"  style="color: #ffffff;  padding-left: 16px;">
@@ -134,7 +134,7 @@
                       <p>CI: Stops Per Truck</p>
                     </a>
                   </li>
-                  <hr style="width:66%; color:ffffff" style="margin-bottom: 1px; margin-top: 1px;">  
+                  <hr style="width:66%; color:ffffff; margin-bottom: 1px; margin-top: 1px;">  
 
                 </ul> 
               <li class="nav-item">
