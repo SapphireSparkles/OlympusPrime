@@ -83,8 +83,8 @@
               </li>
               <li class="nav-item">
                 <a href="?page=opexdash" class="nav-link"  style="color: #ffffff;  padding-left: 16px;">
-                  <i class="fa fa-usd nav-icon"></i>
-                  <p>Operational Expense<br>Dashboard</p>
+                  <p><i class="fa fa-usd nav-icon"></i>
+                  Operational Expense<br>Dashboard</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -139,8 +139,8 @@
                 </ul> 
               <li class="nav-item">
                 <a href="https://temcologistics.domo.com/" target="_blank" class="nav-link"  style="color: #ffffff;  padding-left: 16px;">
-                  <i class="fa fa-user-circle nav-icon"></i>
-                  <p>Your DOMO website<br><span style="font-size:60%;"><i>opens a new page</i></span></p>
+                  <p><i class="fa fa-user-circle nav-icon"></i>
+                  Your DOMO website<br><span style="font-size:60%;"><i>opens a new page</i></span></p>
                 </a> 
               </li>
             </ul>
