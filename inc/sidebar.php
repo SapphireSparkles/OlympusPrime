@@ -68,7 +68,7 @@
               </p>
             </a>
           </li> -->
-          <hr style="width:50%; color:ffffff"> 
+          <hr style="width:50%; color:ffffff" style="margin-bottom: 1px; margin-top: 1px;"> 
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link"  style="color: #99CCED; padding-left: 4px;">
               <i class="nav-icon fa fa-tools"></i>
@@ -104,8 +104,9 @@
                   <p>Samsara Health</p>
                 </a>
               </li>
-          
-              <hr style="width:50%; color:ffffff"> 
+
+              <hr style="width:50%; color:ffffff" style="margin-bottom: 1px; margin-top: 1px;">  
+
               <li class="nav-item has-treeview">
                 <a href="?page=cidash" class="nav-link"  style="color: #ffffff;  padding-left: 16px;">
                   <i class="nav-icon fa fa-balance-scale"></i>
@@ -133,7 +134,7 @@
                       <p>CI: Stops Per Truck</p>
                     </a>
                   </li>
-                  <hr style="width:50%; color:ffffff"> 
+                  <hr style="width:50%; color:ffffff" style="margin-bottom: 1px; margin-top: 1px;">  
 
                 </ul> 
               <li class="nav-item">
