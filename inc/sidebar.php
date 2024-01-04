@@ -68,7 +68,7 @@
               </p>
             </a>
           </li> -->
-          <hr style="width:66%; color:#ffffff; margin-bottom: 1px; margin-top: 1px;"> 
+          <hr style="width:66%; color: #ffffff; margin-bottom: 1px; margin-top: 1px;"> 
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link"  style="color: #99CCED; padding-left: 4px;">
               <i class="nav-icon fa fa-tools"></i>
@@ -105,7 +105,7 @@
                 </a>
               </li>
 
-              <hr style="width:66%; color:#ffffff; margin-bottom: 1px; margin-top: 1px;">  
+              <hr style="width:66%; color: #ffffff; margin-bottom: 1px; margin-top: 1px;">  
 
               <li class="nav-item has-treeview">
                 <a href="?page=cidash" class="nav-link"  style="color: #ffffff;  padding-left: 16px;">
@@ -136,7 +136,7 @@
                   </li> 
 
                 </ul>
-              <hr style="width:66%; color:#ffffff; margin-bottom: 1px; margin-top: 1px;">  
+              <hr style="width:66%; color: #ffffff; margin-bottom: 1px; margin-top: 1px;">  
               <li class="nav-item">
                 <a href="https://temcologistics.domo.com/" target="_blank" class="nav-link"  style="color: #ffffff;  padding-left: 16px;">
                   <p><i class="fa fa-user-circle nav-icon"></i>
