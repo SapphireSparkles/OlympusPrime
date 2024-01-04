@@ -68,7 +68,7 @@
               </p>
             </a>
           </li> -->
-          <hr width="50px;" color="#ffffff" size="10"> 
+          <hr style="width:50%; color:ffffff"> 
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link"  style="color: #99CCED; padding-left: 4px;">
               <i class="nav-icon fa fa-tools"></i>
@@ -83,7 +83,7 @@
               <li class="nav-item">
                 <a href="?page=opexdash" class="nav-link"  style="color: #ffffff;  padding-left: 16px;">
                   <p><i class="fa fa-usd nav-icon"></i>
-                  Operational Expense<br>Dashboard</p>
+                  Operational Expense</p><p style="text-align:center;">Dashboard</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -105,7 +105,7 @@
                 </a>
               </li>
           
-              <hr width="50px;" color="#ffffff" size="10">
+              <hr style="width:50%; color:ffffff"> 
               <li class="nav-item has-treeview">
                 <a href="?page=cidash" class="nav-link"  style="color: #ffffff;  padding-left: 16px;">
                   <i class="nav-icon fa fa-balance-scale"></i>
@@ -133,13 +133,13 @@
                       <p>CI: Stops Per Truck</p>
                     </a>
                   </li>
-                  <hr width="50px;" color="#ffffff" size="10">
+                  <hr style="width:50%; color:ffffff"> 
 
                 </ul> 
               <li class="nav-item">
                 <a href="https://temcologistics.domo.com/" target="_blank" class="nav-link"  style="color: #ffffff;  padding-left: 16px;">
                   <p><i class="fa fa-user-circle nav-icon"></i>
-                  Your DOMO website<br><span style="font-size:60%;"><i>opens a new page</i></span></p>
+                  Your DOMO website<br><span style="font-size:60%;  padding-left: 32px;"><i>opens a new page</i></span></p>
                 </a> 
               </li>
             </ul>
