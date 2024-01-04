@@ -83,7 +83,7 @@
               <li class="nav-item">
                 <a href="?page=opexdash" class="nav-link"  style="color: #ffffff;  padding-left: 16px;">
                   <p><i class="fa fa-usd nav-icon"></i>
-                  Operational Expense</p><br><p style="text-align:center;">Dashboard</p>
+                  Operational Expense</p><br><p style="padding-left: 32px;">Dashboard</p>
                 </a>
               </li>
               <li class="nav-item">
