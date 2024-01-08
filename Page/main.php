@@ -44,7 +44,7 @@
                       <img class="d-block w-100" src="images/banners/Aiea3pl1.png" width="100%" alt="Zeroth slide">
                     </div>
                     <div class="carousel-item">
-                      <img class="d-block w-100" src="images/banners/Carson3pl1.png" width="100%" alt="First slide">
+                      <img class="d-block w-100" src="images/banners/Carson3pl3.png" width="100%" alt="First slide">
                     </div>
                     <div class="carousel-item">
                       <img class="d-block w-100" src="images/banners/Pomona3PL1.png" width="100%"  alt="Second slide">
@@ -135,6 +135,15 @@
                     </div>
                     <div class="carousel-item">
                       <img class="d-block w-100" src="images/banners/NortonMDO1.png" width="100%"  alt="31st slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/ChattanoogaMDO1.png" width="100%"  alt="32nd slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/Columbus3pl1.png" width="100%"  alt="33rd slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/Decatur3pl1.png" width="100%"  alt="34th slide">
                     </div>
                   </div>
                   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

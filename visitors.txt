@@ -1,0 +1,3 @@
+The dial pad report mimics what the customer already was receiving from the IT department every day, so the customer/stakeholder is familiar with the layout and how to read it. 
+
+Having the entire screen taken up by filter makes the user have to scroll down just to see the meat of the report and can be frustrating to the end user that wants to spend less time examining each report. We need to havily cut down on the time needed to utilize each report so the end users can spend more time imporving their operations.
