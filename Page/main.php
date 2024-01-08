@@ -145,6 +145,15 @@
                     <div class="carousel-item">
                       <img class="d-block w-100" src="images/banners/Decatur3pl1.png" width="100%"  alt="34th slide">
                     </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/Rawlins3pl1.png" width="100%"  alt="34th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/Eastrutherford3pl2.png" width="100%"  alt="35th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/Siouxcity3pl1.png" width="100%"  alt="36th slide">
+                    </div>
                   </div>
                   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
