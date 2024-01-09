@@ -4,7 +4,7 @@
   <?php 
 
 if(!isset($_GET["page"])){
-include "Page/main.php" ;
+include "Page/main2.php" ;
 } else {
 $page = $_GET["page"];
 
