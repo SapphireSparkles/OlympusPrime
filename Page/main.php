@@ -41,7 +41,7 @@
                   <div class="carousel-inner">
 
                     <div class="carousel-item active">
-                      <img class="d-block w-100" src="images/banners/Aiea3pl1.png" width="100%" alt="Zeroth slide">
+                      <img class="d-block w-100" src="images/banners/Aiea3pl2.png" width="100%" alt="Zeroth slide">
                     </div>
                     <div class="carousel-item">
                       <img class="d-block w-100" src="images/banners/Carson3pl3.png" width="100%" alt="First slide">
@@ -153,6 +153,33 @@
                     </div>
                     <div class="carousel-item">
                       <img class="d-block w-100" src="images/banners/Siouxcity3pl1.png" width="100%"  alt="36th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/Fargo3pl1.png" width="100%"  alt="37th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/HicksvilleMDO1.png" width="100%"  alt="38th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/Fargo3pl1.png" width="100%"  alt="38th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/GrovecityMDO1.png" width="100%"  alt="38th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/JacksonvilleMDO1.png" width="100%"  alt="38th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/Jackson3pl1.png" width="100%"  alt="38th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/HamiltonMDO1.png" width="100%"  alt="38th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/Idahofalls3pl1.png" width="100%"  alt="38th slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/banners/Youngstown3pl1.png" width="100%"  alt="38th slide">
                     </div>
                   </div>
                   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
