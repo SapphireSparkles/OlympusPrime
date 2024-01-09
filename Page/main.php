@@ -161,7 +161,7 @@
                       <img class="d-block w-100" src="images/banners/HicksvilleMDO1.png" width="100%"  alt="38th slide">
                     </div>
                     <div class="carousel-item">
-                      <img class="d-block w-100" src="images/banners/Fargo3pl1.png" width="100%"  alt="38th slide">
+                      <img class="d-block w-100" src="images/banners/HarrisburgMDO1.png" width="100%"  alt="38th slide">
                     </div>
                     <div class="carousel-item">
                       <img class="d-block w-100" src="images/banners/GrovecityMDO1.png" width="100%"  alt="38th slide">
