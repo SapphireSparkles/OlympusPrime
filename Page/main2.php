@@ -1,3 +1,12 @@
+<?php
+function random_pic($dir = 'uploads')
+{
+    $files = glob($dir . '/*.*');
+    $file = array_rand($files);
+    return $files[$file];
+}
+?>  
+  
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header" style="
@@ -36,7 +45,8 @@
 
               <!-- /.card-header -->
               <div class="card-body">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <img src=<?php $dir='/images/banners/'; echo $dir . array_rand(glob($dir . '*.jpg')); ?> />
+<!--                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                   
                   <div class="carousel-inner">
 
@@ -61,7 +71,7 @@
                   </a>
                   
                 </div>
-              </div>
+              </div> -->
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
