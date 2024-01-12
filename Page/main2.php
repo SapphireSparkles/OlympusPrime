@@ -46,8 +46,7 @@ function random_pic($dir = 'uploads')
               <!-- /.card-header -->
               <div class="card-body">
                 <img src=<?php $dir='/images/banners/'; echo $dir . array_rand(glob($dir . '*.png')); ?> >
-<!--                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                  
+<!--                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">            
                   <div class="carousel-inner">
 
                   <div class="carousel-item active">
@@ -70,8 +69,8 @@ function random_pic($dir = 'uploads')
                     <span class="sr-only">Next</span>
                   </a>
                   
-                </div>
-              </div> -->
+                </div> -->
+              </div>
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
