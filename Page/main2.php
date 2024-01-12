@@ -51,7 +51,7 @@ function random_pic($dir = 'uploads')
                   $randomImage = $images[array_rand($images)]; // See comments
                 ?>
                 <!-- <img src="/images/banners/Youngstown3pl1.png" alt="Youngstown3pl1" > -->
-                <img src="<?php $randomImage ?>" style="width:100%;" >
+                <img src="<?php echo $randomImage; ?>" style="width:100%;" >
                 <!--<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">            
                   <div class="carousel-inner">
 
