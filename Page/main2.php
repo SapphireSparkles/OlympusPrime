@@ -45,8 +45,13 @@ function random_pic($dir = 'uploads')
 
               <!-- /.card-header -->
               <div class="card-body">
-                <img src="/images/banners/Youngstown3pl1.png" alt="Youngstown3pl1" >
-                <!-- <img src=<?php //$dir='/images/banners/'; echo $dir . array_rand(glob($dir . '*.png')); ?> > -->
+                <?php
+                  $imagesDir = 'images/tips/';
+                  $images = glob($imagesDir . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
+                  $randomImage = $images[array_rand($images)]; // See comments
+                ?>
+                <!-- <img src="/images/banners/Youngstown3pl1.png" alt="Youngstown3pl1" > -->
+                <img src="<?php $randomImage ?>" style="width:100%;" >
                 <!--<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">            
                   <div class="carousel-inner">
 
