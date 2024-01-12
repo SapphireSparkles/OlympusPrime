@@ -49,7 +49,7 @@
                     <div class="carousel-item">
                       <img class="d-block w-100" src="images/banners/Pomona3PL1.png" width="100%"  alt="Second slide">
                     </div>
-                    <div class="carousel-item">
+                    <!--<div class="carousel-item">
                       <img class="d-block w-100" src="images/banners/SanDiegoMDO1.png" width="100%"  alt="Third slide">
                     </div>
                     <div class="carousel-item">
@@ -180,7 +180,7 @@
                     </div>
                     <div class="carousel-item">
                       <img class="d-block w-100" src="images/banners/Youngstown3pl1.png" width="100%"  alt="38th slide">
-                    </div>
+                    </div>-->
                   </div>
                   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
